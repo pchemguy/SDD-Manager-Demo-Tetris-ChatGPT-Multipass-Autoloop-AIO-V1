@@ -10,6 +10,8 @@
 | C4 Clock/input controller | Own event subscriptions, monotonic scheduling, keyboard intent and hidden-page suspension. | Maps native events to session actions, then sends snapshots to the view. | Fake-clock action ordering plus real native browser input. |
 | C5 DOM view | Own fixed cell grid, score/status/help and restart UI. | Snapshot + view options → DOM update; user intent → controller callback. | Render fixtures and browser assertions; never infer locked cells from CSS. |
 | C6 Settings | Own typed defaults, current settings and validated change events independently of game restart. | Controller consults toggles; spawn captures locking policies; native view controls receive values and callbacks. | Toggle timing, stored-hold retention and next-preview nonconsumption. |
+| C7 Settings resolver | Own allowlisted decoders and per-setting URL/cookie/default precedence. | Raw strings → typed settings plus valid explicit URL values to save; no side effects. | Mixed sources, invalid values, duplicates, explicit defaults and omission fixtures. |
+| C8 Browser settings adapter | Own cookie parsing/writes and URL query synchronization. | C6 changes and C7 resolution effects → cookie/History API attempts; failures reported nonfatally. | Real reload/reopen tests and isolated denied-cookie/history adapters. |
 
 ## Collaboration and ownership
 
@@ -22,3 +24,5 @@ C1 projects from the current pose without changing state or randomness. C3 commi
 C1 evaluates strict final fits even when penetrator traversal allows temporary overlap. C3 validates the activation candidate before spending a bonus. Lock never overwrites an occupied cell; clearing and reward accounting occur after a valid lock and before the next spawn. C5 layers the white active geometry over settled cells without altering their stored identities.
 
 C6 survives C3 restart. Feature availability is consulted at action time; locking fields are copied at spawn. C5 owns settings/preview/hold/bonus DOM nodes, but their values come only from snapshots and C6. Key handling ignores native interactive controls.
+
+C8 reads sources at bootstrap, C7 resolves them, C6 adopts the result and C8 saves only valid explicit URL values. On player changes, C6 updates first, then C8 attempts both persistence effects independently. C7 never reads document.cookie or location directly.
