@@ -8,7 +8,7 @@
 - Decision delegation: after the first PROJECT approval, resolve new material decisions within the predefined scopes using agent judgment, with visible rationale and durable owning-document decisions.
 - Tracking: enabled for documentation and implementation by root AGENTS.md. Native milestone 1, `sdd-docs-main`, and issues 1–9 correspond to DOCS-001–009; exact standard content and associations were read back before repository modifications.
 - Publication: push and verify each owned commit before advancing. Reporting: Standard after Explicit entry reporting.
-- Next boundary: publish/close DOCS-005, then continue DOCS-006.
+- Next boundary: publish/close DOCS-006, then continue DOCS-007.
 - Final authorized stop: after pass 6 DOCS-008 publication and issue closure, before DOCS-009, whole-package QC, documentation integration and implementation. Keep DOCS-009 and the documentation milestone open.
 
 ## Scope sequence
@@ -45,7 +45,7 @@ The user confirmed the following proposals with “Yes” on 24 October 2026. Th
 | DOCS-003 | Scope 4: `ARCHITECTURE.md` blob `0d633b3457dc21ef62b4957efb937034dbc0a3d2`; accepted under autodoc/autoloop checkpoint preapproval, owner sdd-design. Owner consistency/content review passed. |
 | DOCS-004 | Scope 4: `DECOMPOSITION.md` blob `3823fda5bc29a7727343f522ba1bef46cd161eb8`; accepted under autodoc/autoloop checkpoint preapproval, owner sdd-design. Owner consistency/content review passed. |
 | DOCS-005 | Scope 4: `SPEC.md` blob `2bc80015e70ea56cb1195301d81d6e25bd825b04`; accepted under autodoc/autoloop checkpoint preapproval, owner sdd-specify. QC: `SPEC-REVIEW-REPORT.md` (blob `ffcb41944c950929d16dd99d546d9b8ae282020e`). |
-| DOCS-006 | Scope 4 pending current-scope review/preapproval; retained previous content is input, not current approval. |
+| DOCS-006 | Scope 4: `PLAN.md` blob `9df6fe6ccef5c7b8ed61e2ded55c0cbebf838164`; accepted under autodoc/autoloop checkpoint preapproval, owner sdd-plan. QC: `PLAN-REVIEW-REPORT.md` (blob `afe30d5f5e6137746f25709524637636e43a4f55`). |
 | DOCS-007 | Scope 4 pending current-scope review/preapproval; retained previous content is input, not current approval. |
 | DOCS-008 | Scope 4 pending current-scope review/preapproval; retained previous content is input, not current approval. |
 | DOCS-009 | Unchecked and unselected; remains outside the authorized autoloop boundary. |
@@ -63,4 +63,4 @@ Material unresolved decisions: none blocking the initial brief. Exact gameplay c
 
 ## Pending transitions
 
-The current scope-4 DOCS-005 checkpoint awaits publication and exact issue-5 closure readback at the time of this record. Earlier required checkpoint effects were verified before this document was authored; Git and issue evidence identify those commits. Reconcile actual later effects before replay. Continue in document dependency order after closure.
+The current scope-4 DOCS-006 checkpoint awaits publication and exact issue-6 closure readback at the time of this record. Earlier required checkpoint effects were verified before this document was authored; Git and issue evidence identify those commits. Reconcile actual later effects before replay. Continue in document dependency order after closure.

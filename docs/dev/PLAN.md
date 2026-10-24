@@ -63,6 +63,23 @@ Prerequisite: Phase 2 completed, reviewed, integrated and published; preserve it
 
 Decision evidence: demonstrate the integrated milestone behavior and inspect usability of its changed controls. Report evidence for the human to continue, amend, simplify or stop; do not infer a new scope or implement automatic steering.
 
+### Phase 4 — Penetrator ability
+
+Outcome: An earnable penetrator ability with safe through-stack traversal, faithful landing assistance and visible bonus accounting. Scope: R14–R17 with R9/R11–R13 interactions. Release: v0.4.0.
+
+Scope rationale: Traversal, activation, rewards and presentation form one usable ability; presenting activation without its safe landing or earned resource would be incomplete. Existing normal gameplay remains unchanged.
+
+Prerequisite: Phase 3 completed, reviewed, integrated and published; preserve its acceptance and acquire an authorized range.
+
+| Milestone | Integrated outcome / exit |
+| --- | --- |
+| 4.1 — Penetrator traversal | Establish safe mode-aware traversal and strict legal final placement. Finish its code review, checks and report with no required blocker. |
+| 4.2 — Activation and rewards | Demonstrate earned, spent and capped activations with correct hold/timer interactions. Finish its code review, checks and report with no required blocker. |
+| 4.3 — Penetrator presentation | Demonstrate white activated pieces and a synchronized accessible bonus indicator. Finish its code review, checks and report with no required blocker. |
+| 4.4 — Phase review | Review the complete phase after delivery milestone closure; verify included contracts and prior-phase regressions, report findings/TODOs and confirm integration readiness. |
+
+Decision evidence: demonstrate the integrated milestone behavior and inspect usability of its changed controls. Report evidence for the human to continue, amend, simplify or stop; do not infer a new scope or implement automatic steering.
+
 ## Risks and exit evidence
 
 Timing/input ordering, top-out after a transaction, repeated sessions and cross-engine keyboard focus are primary risks. Reproducible model fixtures and real browser actions cover different failure classes. An unavailable required browser remains an explicit blocked check; proactively diagnose supported alternatives under the central policy before declaring a setup blocker.
