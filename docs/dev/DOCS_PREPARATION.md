@@ -8,8 +8,8 @@
 - Decision delegation: after the first PROJECT approval, resolve new material decisions within the predefined scopes using agent judgment, with visible rationale and durable owning-document decisions.
 - Tracking: enabled for documentation and implementation by root AGENTS.md. Native milestone 1, `sdd-docs-main`, and issues 1–9 correspond to DOCS-001–009; exact standard content and associations were read back before repository modifications.
 - Publication: push and verify each owned commit before advancing. Reporting: Standard after Explicit entry reporting.
-- Next boundary: the six-scope loop is complete through DOCS-008. Stop and await human direction before DOCS-009, package QC, documentation integration or implementation.
-- Final authorized stop: after pass 6 DOCS-008 publication and issue closure, before DOCS-009, whole-package QC, documentation integration and implementation. Keep DOCS-009 and the documentation milestone open.
+- Next boundary: finish selected DOCS-009 package QC and repairs, publish its result and close/read back issue 9, explicitly merge/verify/publish to main, close/read back milestone 1 and stop before implementation.
+- Final authorized stop: documentation complete and integrated; pause before implementation. The user advanced the former autodoc stop with “complete doc design” on 24 October 2026. No new scope pass or implementation range is selected.
 
 ## Scope sequence
 
@@ -48,7 +48,7 @@ The user confirmed the following proposals with “Yes” on 24 October 2026. Th
 | DOCS-006 | Scope 6: `PLAN.md` blob `1b63d0524b3ebda8b9e7d76c313c74cd7cfd35d0`; accepted under autodoc/autoloop checkpoint preapproval, owner sdd-plan. QC: `PLAN-REVIEW-REPORT.md` (blob `0dd2ce3f973372363182e77f2c77636594cb2e2c`). |
 | DOCS-007 | Scope 6: `layout.md` blob `b4d204361c6f8817060dc3657bb6371ba7150959`; accepted under autodoc/autoloop checkpoint preapproval, owner sdd-plan. QC: `PLAN-REVIEW-REPORT.md` (blob `526b5fbd6188fdc44aa82c23158bee81bb6f6692`). |
 | DOCS-008 | Scope 6: `TASKS.md` blob `29fe918cbe4de001de0fb792bbc81e202cfe15cb`; accepted under autodoc/autoloop checkpoint preapproval, owner sdd-tasks. QC: `TASKS-REVIEW-REPORT.md` (blob `36e984b647c98e7f6c4fef03e4f86b1b800a5703`). |
-| DOCS-009 | Unchecked and unselected; remains outside the authorized autoloop boundary. |
+| DOCS-009 | Selected by the user’s “complete doc design” instruction on 24 October 2026. Package review and bounded repairs are underway; DOCS-QC-REPORT.md owns findings. Unchecked until passing completion. |
 
 Material unresolved decisions: none blocking the initial brief. Exact gameplay contracts belong to SPEC; architecture, delivery and task details remain with their respective owners.
 
@@ -63,4 +63,6 @@ Material unresolved decisions: none blocking the initial brief. Exact gameplay c
 
 ## Pending transitions
 
-Final TASKS checkpoint `af3e07f08595d0799190682f9cf9a51329de4615` was published with exact remote readback and issue 8 was read back closed. Final boundary checks confirmed issues 1–8 closed, issue 9 open and milestone 1 open; main remains at the initial baseline. No package QC or implementation has run. This bounded control/handoff correction still requires its ordinary publication/readback; then retain the requested stop. Do not repeat completed issue closures or infer authority for DOCS-009.
+Resolve DOCS-QC-01–03 and recheck affected owner gates. Required order: passing package publication → issue 9 closure/readback → explicit merge/verification/publication to main → milestone 1 closure/readback → preimplementation stop. Existing issues 1–8 stay closed; no reset is selected.
+
+Canonical repository: pchemguy/SDD-Manager-Demo-Tetris-ChatGPT-V8-Multipass-Autoloop-AllInOne, GitHub ID 1431887015. The former URL redirects to that identity; matching main/design-docs heads and the same nine issue/milestone associations were verified before origin was updated. No destination or tracking identity was substituted.
