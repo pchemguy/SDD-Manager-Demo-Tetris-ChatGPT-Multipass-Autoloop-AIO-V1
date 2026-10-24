@@ -8,7 +8,7 @@
 - Decision delegation: after the first PROJECT approval, resolve new material decisions within the predefined scopes using agent judgment, with visible rationale and durable owning-document decisions.
 - Tracking: enabled for documentation and implementation by root AGENTS.md. Native milestone 1, `sdd-docs-main`, and issues 1–9 correspond to DOCS-001–009; exact standard content and associations were read back before repository modifications.
 - Publication: push and verify each owned commit before advancing. Reporting: Standard after Explicit entry reporting.
-- Next boundary: publish/close DOCS-005, then continue DOCS-006.
+- Next boundary: publish/close DOCS-006, then continue DOCS-007.
 - Final authorized stop: after pass 6 DOCS-008 publication and issue closure, before DOCS-009, whole-package QC, documentation integration and implementation. Keep DOCS-009 and the documentation milestone open.
 
 ## Scope sequence
@@ -45,7 +45,7 @@ The user confirmed the following proposals with “Yes” on 24 October 2026. Th
 | DOCS-003 | Scope 1: `ARCHITECTURE.md` blob `ce10ada66808661a76e7df72ea163f4903ab6af1`; accepted under autodoc/autoloop checkpoint preapproval, owner sdd-design. Owner consistency/content review passed. |
 | DOCS-004 | Scope 1: `DECOMPOSITION.md` blob `4c194720da3276db573575ca3f5e1ed17a774aeb`; accepted under autodoc/autoloop checkpoint preapproval, owner sdd-design. Owner consistency/content review passed. |
 | DOCS-005 | Scope 1: `SPEC.md` blob `b3be5d956feb31bf23ca22985db3a6ddc898600a`; accepted under autodoc/autoloop checkpoint preapproval, owner sdd-specify. QC: `SPEC-REVIEW-REPORT.md` (blob `c9b7f1dda63c272407f456c5f716440a6074361d`). |
-| DOCS-006 | Pass 1 PLAN and strategy QC pending; checkpoint preapproved. |
+| DOCS-006 | Scope 1: `PLAN.md` blob `da9cc920dafcb3ff5ba262afeb1968f9efcb6ac5`; accepted under autodoc/autoloop checkpoint preapproval, owner sdd-plan. QC: `PLAN-REVIEW-REPORT.md` (blob `6bbc18eced1e6349370124acaa44c34dfc2d0a35`). |
 | DOCS-007 | Pass 1 layout and combined QC pending; checkpoint preapproved. |
 | DOCS-008 | Pass 1 TASKS and required QC pending; checkpoint preapproved. |
 | DOCS-009 | Unchecked and unselected; remains outside the authorized autoloop boundary. |
@@ -63,4 +63,4 @@ Material unresolved decisions: none blocking the initial brief. Exact gameplay c
 
 ## Pending transitions
 
-The current scope-1 DOCS-005 checkpoint awaits publication and exact issue-5 closure readback at the time of this record. Earlier required checkpoint effects were verified before this document was authored; Git and issue evidence identify those commits. Reconcile actual later effects before replay. Continue in document dependency order after closure.
+The current scope-1 DOCS-006 checkpoint awaits publication and exact issue-6 closure readback at the time of this record. Earlier required checkpoint effects were verified before this document was authored; Git and issue evidence identify those commits. Reconcile actual later effects before replay. Continue in document dependency order after closure.
