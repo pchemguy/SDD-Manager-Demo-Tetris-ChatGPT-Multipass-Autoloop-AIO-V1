@@ -1,8 +1,8 @@
 # Project handoff
 
-Checkpoint: initial SDD documentation setup, DOCS-001. Recover later work from the linked owners and Git; this is not necessarily the branch tip.
+Checkpoint: documentation scope 1, DOCS-008 completion; package QC is not selected.
 
-Outcome: existing root guidance preserved; the task-only preparation checklist and separate control/evidence record are initialized. No product implementation exists.
+Outcome: current cumulative scope 1 document roots and required adjacent per-document reports are prepared; application implementation is pending.
 
 ## Workflow and sources
 
@@ -13,7 +13,7 @@ Outcome: existing root guidance preserved; the task-only preparation checklist a
 ## Scope and human decisions
 
 - Authorized range: prepare all six user-defined cumulative scopes in autodoc/autoloop mode, preserving their sequence in DOCS_PREPARATION.
-- Next human checkpoint: first pass PROJECT approval; the user's clarification confirmation does not accept an unseen brief.
+- Next human checkpoint: after final scope DOCS-008, direction to advance to package QC; first PROJECT approval was received on 24 October 2026.
 - Later checkpoints: later PROJECT approvals waived; other document checkpoints through TASKS preapproved. New material decisions after the first approval are delegated within scope with visible rationale.
 - Final stop: final pass DOCS-008; no DOCS-009, package QC, merge or implementation without subsequent direction.
 - Tracking: enabled by root AGENTS.md for preparation and implementation; milestone 1 and issues 1–9 verified. Every commit requires push/readback. Reporting: Standard.
@@ -27,5 +27,5 @@ Outcome: existing root guidance preserved; the task-only preparation checklist a
 
 ## Pending work and next action
 
-- Initialization publication and issue 1 closure are pending confirmation at this snapshot; verify actual later Git and provider evidence.
-- Next eligible action: after those effects complete, publish the classic-baseline PROJECT proposal and stop for its first approval.
+- Publish/read back scope-1 DOCS-008 and close/read back issue 8. Then perform the next predefined scope reset.
+- Recover later publication/issue effects from Git and owning issue comments; do not repeat an already verified effect.
