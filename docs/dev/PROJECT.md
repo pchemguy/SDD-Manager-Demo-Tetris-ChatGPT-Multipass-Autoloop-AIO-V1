@@ -21,6 +21,12 @@ Provide hold, a landing ghost, seven-piece bag randomization, wall kicks and har
 
 The landing ghost is dynamically hidden when any projected cell lies above the board midline and is shown when the whole projection is in the lower half.
 
+## Penetrator ability
+
+Four-line clears award penetrator bonuses, with at most three stored. A hotkey spends one bonus to activate the current piece until it locks. Activated pieces can travel through occupied cells without destroying them and must settle entirely within the board without overlap. Hard drop and the visible ghost share the lowest valid landing position. Hold is unavailable for an activated penetrator.
+
+Render activated pieces entirely white, reserve other colors for regular pieces and show one side-panel symbol for each available bonus. Restart clears bonuses.
+
 ## Platform and constraints
 
 Implement the game in TypeScript using a DOM/CSS board and native browser controls. Deliver it as a static browser application without a backend, account or external service requirement. Keep gameplay logic independently testable from rendering and input handling.
