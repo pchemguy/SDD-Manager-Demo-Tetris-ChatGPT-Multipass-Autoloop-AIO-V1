@@ -2,9 +2,9 @@
 
 ## Current gate
 
-State: Ready for its selected documentation boundary; implementation activation is not selected. Current scope: cumulative item 2. Owner: sdd-tasks.
+State: Ready for its selected documentation boundary; implementation activation is not selected. Current scope: cumulative item 3. Owner: sdd-tasks.
 
-Exact reviewed/governing Git blob identities: `TASKS.md` = `a7844a05386a9f9018a8c11af7c5f80e28898047`; `SPEC.md` = `04caf55bd84442a4bc9908920b24bc4d9965ac96`; `SPEC-REVIEW-REPORT.md` = `f074a8a9a17a15971b2c7ee6928b1a08d34ceaba`; `PLAN.md` = `4479752f4d120df97a240acb47c3ad0307e4ed51`; `layout.md` = `be1140ea5ed4a3691e93a2035d961b128255f324`; `PLAN-REVIEW-REPORT.md` = `30de54da36a6eff827a8e66dd58b83c5502d0849`.
+Exact reviewed/governing Git blob identities: `TASKS.md` = `1a80451848f93d346511099f5283136dbb3ec7fb`; `SPEC.md` = `ceb53559d04193ba33a951dc375c0e4eee0fac85`; `SPEC-REVIEW-REPORT.md` = `368c0c1f185959bec67a0b73f5d5c4c1b3c5e879`; `PLAN.md` = `7964dca743c93fe7e83ecfbd2ce60f1ee1e94967`; `layout.md` = `be1140ea5ed4a3691e93a2035d961b128255f324`; `PLAN-REVIEW-REPORT.md` = `cc1756d43c6714e937f8f5bcfee04ffcecf06c87`.
 
 No confirmed unresolved findings. This is scoped document conformance evidence, not whole-package QC, runtime testing, browser provisioning or implementation acceptance.
 
@@ -43,5 +43,25 @@ Exact source states for this review: `TASKS.md` = `a7844a05386a9f9018a8c11af7c5f
 | Milestone 3.2 | 2 | T-028; phase review T-029 counted separately | Two distinct delivery units are sufficient for this narrow assistance capability; adding a third would fragment model/view integration without a separate outcome. |
 
 Finding TASKS-F1 (prior TASKS phase/milestone review evidence): lifecycle wording could make report-task completion appear to depend on its own later milestone closure/integration. Corrected in the current TASKS introduction and review evidence: report publication completes the task; coordinator lifecycle effects follow. Rechecked all review prerequisites and acceptance lines; resolved.
+
+Checks performed: owner semantic conformance review, current content-identity capture, generated hierarchy/dependency assertions where applicable, local-link/heading/content-boundary validation and staged whitespace checks. Runtime tests and browser setup have not run. No corrections or exceptions were required in this reviewed state; a later changed-input review appends another revision.
+
+## Revision 2
+
+Reviewed 24 October 2026, current cumulative scope 3.
+
+Reviewed integrated capability scope before numerical shape: Phase 1 contains the minimum complete classic game; subsequent phases add a bounded named capability on its verified predecessor. Every included SPEC contract has an outcome and an exit route. Each delivery milestone ends with a separate code-review/testing/report task; phase review has exactly one task and depends on all delivery milestone closures. Version scope does not collapse delivery into one phase. Reviewed stable unique task IDs, exact four-space hierarchy, prerequisites, path ownership, failure/integration/documentation work and explicit review/report evidence. No implementation checkbox is checked.
+
+Exact source states for this review: `TASKS.md` = `1a80451848f93d346511099f5283136dbb3ec7fb`; `SPEC.md` = `ceb53559d04193ba33a951dc375c0e4eee0fac85`; `SPEC-REVIEW-REPORT.md` = `368c0c1f185959bec67a0b73f5d5c4c1b3c5e879`; `PLAN.md` = `7964dca743c93fe7e83ecfbd2ce60f1ee1e94967`; `layout.md` = `be1140ea5ed4a3691e93a2035d961b128255f324`; `PLAN-REVIEW-REPORT.md` = `cc1756d43c6714e937f8f5bcfee04ffcecf06c87`.
+
+| Group | Delivery count | Excluded reviews | Scope/count assessment |
+| --- | --- | --- | --- |
+| Milestone 1.1 | 3 | T-004; phase review T-013 counted separately | Three bounded delivery units separate the actual cooperating responsibilities and include tests/docs. |
+| Milestone 1.2 | 3 | T-008; phase review T-013 counted separately | Three bounded delivery units separate the actual cooperating responsibilities and include tests/docs. |
+| Milestone 1.3 | 3 | T-012; phase review T-013 counted separately | Three bounded delivery units separate the actual cooperating responsibilities and include tests/docs. |
+| Milestone 2.1 | 3 | T-017; phase review T-022 counted separately | Three bounded delivery units separate the actual cooperating responsibilities and include tests/docs. |
+| Milestone 2.2 | 3 | T-021; phase review T-022 counted separately | Three bounded delivery units separate the actual cooperating responsibilities and include tests/docs. |
+| Milestone 3.1 | 2 | T-025; phase review T-029 counted separately | Two distinct delivery units are sufficient for this narrow assistance capability; adding a third would fragment model/view integration without a separate outcome. |
+| Milestone 3.2 | 2 | T-028; phase review T-029 counted separately | Two distinct delivery units are sufficient for this narrow assistance capability; adding a third would fragment model/view integration without a separate outcome. |
 
 Checks performed: owner semantic conformance review, current content-identity capture, generated hierarchy/dependency assertions where applicable, local-link/heading/content-boundary validation and staged whitespace checks. Runtime tests and browser setup have not run. No corrections or exceptions were required in this reviewed state; a later changed-input review appends another revision.

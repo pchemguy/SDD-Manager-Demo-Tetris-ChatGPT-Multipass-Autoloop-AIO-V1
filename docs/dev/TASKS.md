@@ -87,12 +87,12 @@ The hierarchy derives from [PLAN](PLAN.md), contracts from [SPEC](SPEC.md) and e
 
 - [ ] Phase 3 — Landing and hold assistance
     - [ ] Milestone 3.1 — Landing assistance
-        - [ ] T-023 — Expose the canonical ghost projection
-            Scope: src/core/session.ts, src/core/landing.ts and tests/unit/landing.test.ts. Depends on: T-022. Contracts: R11.
-            Evidence: Verify the ghost uses the same query as hard drop without modifying board, timing or random state.
-        - [ ] T-024 — Render the landing ghost
-            Scope: src/ui/view.ts, src/styles.css and tests/e2e/assistance.spec.ts. Depends on: T-023. Contracts: R11.
-            Evidence: Verify outline geometry across spawn/movement/rotation/hold and no ghost at game over in both engines.
+        - [ ] T-023 — Expose ghost projection and dynamic visibility
+            Scope: src/core/session.ts, src/core/landing.ts and tests/unit/landing.test.ts. Depends on: T-022. Contracts: R11, R13.
+            Evidence: Verify canonical geometry without mutation and visibility for wholly upper, straddling rows 9/10 and wholly lower projections, including transitions.
+        - [ ] T-024 — Render the dynamic landing ghost
+            Scope: src/ui/view.ts, src/styles.css and tests/e2e/assistance.spec.ts. Depends on: T-023. Contracts: R11, R13.
+            Evidence: Verify hide/show transitions at the midline and exact agreement with hard drop in both engines; rendering consumes no randomness.
         - [ ] T-025 — Review, test and report milestone 3.1
             Depends on: T-023, T-024. Scope: whole milestone implementation and collaborating boundaries.
             Evidence: separate code review and required focused/regression/browser checks; repair blockers; document findings and a TODO section in docs/dev/reports/phases/3/3.1.md.

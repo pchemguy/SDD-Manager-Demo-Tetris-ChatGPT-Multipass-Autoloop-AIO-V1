@@ -1,8 +1,8 @@
 # Project handoff
 
-Checkpoint: documentation scope 3, cursor reset before PROJECT.
+Checkpoint: documentation scope 3, DOCS-008 completion; package QC is not selected.
 
-Outcome: prior document set retained for revision; DOCS-002–009 reopened locally.
+Outcome: current cumulative scope 3 document roots and required adjacent per-document reports are prepared; application implementation is pending.
 
 ## Workflow and sources
 
@@ -27,5 +27,5 @@ Outcome: prior document set retained for revision; DOCS-002–009 reopened local
 
 ## Pending work and next action
 
-- Publish/read back this scope-3 reset and verify the same issues 2–9 are open before revising PROJECT. Retained reports certify only their recorded source states.
+- Publish/read back scope-3 DOCS-008 and close/read back issue 8. Then perform the next predefined scope reset.
 - Recover later publication/issue effects from Git and owning issue comments; do not repeat an already verified effect.
