@@ -35,3 +35,9 @@ Ground-contact state and its deadline belong to the core, using supplied timesta
 ## Penetrator movement
 
 The shared landing component selects the lowest valid fit beneath a candidate pose. Its normal and penetrator policies share board geometry but differ in traversal constraints. The session alone owns activation and bonus accounting; movement and projection read the active mode. Temporary overlap is representation state, never a board write. Lock uses the same strict non-overlap validator in both modes, keeping the board invariant independent of traversal.
+
+## Settings boundary
+
+A typed settings value is owned by the controller's session configuration service. Rendering reads visibility settings; action dispatch reads feature toggles. The session copies locking policies into each spawned piece, so changes cannot silently alter a pending deadline. Native settings controls emit typed changes and do not dispatch gameplay keys. The queue exposes a read-only preview; preview rendering cannot draw a new piece.
+
+Settings live in page memory, independently of the game state. Restart retains them; a page reload creates defaults. No cookie, query or storage adapter participates in initialization.
