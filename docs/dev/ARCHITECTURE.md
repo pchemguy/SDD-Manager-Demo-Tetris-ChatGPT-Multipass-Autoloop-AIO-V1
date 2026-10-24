@@ -24,4 +24,10 @@ Use small TypeScript modules and data transformations rather than a framework, i
 
 ## Verification and boundaries
 
-Core fixtures establish geometry, wall/floor collisions, rotation, line clearing, scoring, top-out and clean restart. Integration checks connect real core components and control time/randomness. Browser checks exercise keyboard delivery, page-scroll prevention, rendered state and restart in Chromium and Firefox under the [central policy](../../BROWSER_DEV_POLICY.md). No network service is required for play. DECOMPOSITION defines logical units; SPEC owns precise behavior.
+Core fixtures establish geometry, wall/floor collisions, rotation, line clearing, scoring, top-out and clean restart. Integration checks connect real core components and control time/randomness. Browser checks exercise keyboard delivery, page-scroll prevention, rendered state and restart in Chromium and Firefox under the [central policy](../../BROWSER_DEV_POLICY.md). No network service is required for play. [DECOMPOSITION](DECOMPOSITION.md) defines logical units; [SPEC](SPEC.md) owns precise behavior.
+
+## Landing and assistance ownership
+
+The core owns a single landing projector used by hard drop and the ghost; independent renderer calculations are prohibited. The randomizer owns bag state. Rotation owns deterministic kick candidates. Session state owns the hold slot and once-per-piece hold eligibility. The view receives projected geometry and hold presentation data without consuming the queue.
+
+Ground-contact state and its deadline belong to the core, using supplied timestamps rather than browser timers. The controller supplies wakeups and inputs; the model settles due events before accepting same-time actions. This prevents timing policy from diverging between keyboard, gravity and hard drop.
