@@ -12,6 +12,7 @@ These are intended source/test homes, not a claim that application files already
 | Composition/static shell | src/main.ts, index.html | production build and browser entry flow |
 | Landing and kicks | src/core/landing.ts; rotation remains in geometry.ts | tests/unit/landing.test.ts, tests/unit/geometry.test.ts |
 | Hold/ghost presentation | session.ts and ui/view.ts | tests/unit/hold.test.ts, tests/e2e/assistance.spec.ts |
+| Penetrator mode and rewards | landing.ts, session.ts and ui/view.ts | tests/unit/penetrator.test.ts, tests/e2e/penetrator.spec.ts |
 
 ## Repository and generated assets
 
