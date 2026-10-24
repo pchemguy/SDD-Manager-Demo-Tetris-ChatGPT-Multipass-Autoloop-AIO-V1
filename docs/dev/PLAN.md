@@ -80,6 +80,22 @@ Prerequisite: Phase 3 completed, reviewed, integrated and published; preserve it
 
 Decision evidence: demonstrate the integrated milestone behavior and inspect usability of its changed controls. Report evidence for the human to continue, amend, simplify or stop; do not infer a new scope or implement automatic steering.
 
+### Phase 5 — Session configuration
+
+Outcome: Native session settings and next preview that can be changed safely during play. Scope: R18–R20 and their gameplay interactions. Release: v0.5.0.
+
+Scope rationale: Typed settings and native controls form one useful configuration increment. Persistence is independent and belongs to Phase 6; the page-session behavior is complete without it.
+
+Prerequisite: Phase 4 completed, reviewed, integrated and published; preserve its acceptance and acquire an authorized range.
+
+| Milestone | Integrated outcome / exit |
+| --- | --- |
+| 5.1 — Session settings | Demonstrate six labeled controls, defaults and the read-only next preview. Finish its code review, checks and report with no required blocker. |
+| 5.2 — Live policy integration | Demonstrate immediate visibility/toggle effects and next-piece locking-policy changes. Finish its code review, checks and report with no required blocker. |
+| 5.3 — Phase review | Review the complete phase after delivery milestone closure; verify included contracts and prior-phase regressions, report findings/TODOs and confirm integration readiness. |
+
+Decision evidence: demonstrate the integrated milestone behavior and inspect usability of its changed controls. Report evidence for the human to continue, amend, simplify or stop; do not infer a new scope or implement automatic steering.
+
 ## Risks and exit evidence
 
 Timing/input ordering, top-out after a transaction, repeated sessions and cross-engine keyboard focus are primary risks. Reproducible model fixtures and real browser actions cover different failure classes. An unavailable required browser remains an explicit blocked check; proactively diagnose supported alternatives under the central policy before declaring a setup blocker.
