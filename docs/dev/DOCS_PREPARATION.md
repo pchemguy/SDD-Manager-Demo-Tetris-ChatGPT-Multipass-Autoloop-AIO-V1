@@ -8,7 +8,7 @@
 - Decision delegation: after the first PROJECT approval, resolve new material decisions within the predefined scopes using agent judgment, with visible rationale and durable owning-document decisions.
 - Tracking: enabled for documentation and implementation by root AGENTS.md. Native milestone 1, `sdd-docs-main`, and issues 1–9 correspond to DOCS-001–009; exact standard content and associations were read back before repository modifications.
 - Publication: push and verify each owned commit before advancing. Reporting: Standard after Explicit entry reporting.
-- Next boundary: verify reset publication and reopen/read back existing issues 2–9, then revise retained PROJECT for scope 2.
+- Next boundary: publish/close DOCS-002, then continue DOCS-003.
 - Final authorized stop: after pass 6 DOCS-008 publication and issue closure, before DOCS-009, whole-package QC, documentation integration and implementation. Keep DOCS-009 and the documentation milestone open.
 
 ## Scope sequence
@@ -41,7 +41,7 @@ The user confirmed the following proposals with “Yes” on 24 October 2026. Th
 | Task | Current evidence / decision basis |
 | --- | --- |
 | DOCS-001 | All four root records existed at baseline `19e560c7b3fb680c2589902ba8c3466f795249d4`; retained byte for byte. DOCS_TASKS is instantiated from the running package with only DOCS-001 checked. This record and HANDOFF are established in the same initialization commit. |
-| DOCS-002 | Scope 2 pending current-scope review/preapproval; retained previous content is input, not current approval. |
+| DOCS-002 | Scope 2: `PROJECT.md` blob `6e359563507b0f2138e6a66fb615237df92c05b5`; accepted under autodoc/autoloop checkpoint preapproval, owner sdd-design. Owner consistency/content review passed. |
 | DOCS-003 | Scope 2 pending current-scope review/preapproval; retained previous content is input, not current approval. |
 | DOCS-004 | Scope 2 pending current-scope review/preapproval; retained previous content is input, not current approval. |
 | DOCS-005 | Scope 2 pending current-scope review/preapproval; retained previous content is input, not current approval. |
@@ -63,4 +63,4 @@ Material unresolved decisions: none blocking the initial brief. Exact gameplay c
 
 ## Pending transitions
 
-Scope-2 reset publication and reopening/readback of the same issues 2–9 are pending. Do not resume document work until verified. Documentation milestone 1 and issue 9 must remain open.
+The current scope-2 DOCS-002 checkpoint awaits publication and exact issue-2 closure readback at the time of this record. Earlier required checkpoint effects were verified before this document was authored; Git and issue evidence identify those commits. Reconcile actual later effects before replay. Continue in document dependency order after closure.
