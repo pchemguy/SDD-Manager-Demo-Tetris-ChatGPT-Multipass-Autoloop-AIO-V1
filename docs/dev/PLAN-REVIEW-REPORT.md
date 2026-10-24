@@ -2,9 +2,9 @@
 
 ## Current gate
 
-State: Ready for TASKS derivation. Current scope: cumulative item 5. Owner: sdd-plan.
+State: Ready for layout authoring only; TASKS is held until combined layout review. Current scope: cumulative item 6. Owner: sdd-plan.
 
-Exact reviewed/governing Git blob identities: `PLAN.md` = `6fcb34426c14a83a238a94f6d79d99f58824af6d`; `layout.md` = `c94de676ba0913138f8f9b0ea55cc44bb889ea43`; `PROJECT.md` = `bb17a9b4427eab0ee8ef36801ca3ce8f8db0f1d9`; `ARCHITECTURE.md` = `0bb2091afa91fb2aff729478a884e2315dec8a42`; `DECOMPOSITION.md` = `8f18006a5312a66f27a640e1931a2299306d3403`; `SPEC.md` = `15ae7a763bc56b9dc2ba1e551190eb8177069cd0`; `SPEC-REVIEW-REPORT.md` = `5464d23bf423970a711e77faaae3baa5f704bec1`.
+Exact reviewed/governing Git blob identities: `PLAN.md` = `1b63d0524b3ebda8b9e7d76c313c74cd7cfd35d0`; `PROJECT.md` = `27b571b16e6c78316d7feea10a83b677439c4afa`; `ARCHITECTURE.md` = `20928494cd7c2006544dcf0631de1d2741ab2643`; `DECOMPOSITION.md` = `338cd050cb7d66481e2b6489e1dde3e54aa515de`; `SPEC.md` = `79517958465616837a7e78cf46c2c09050186863`; `SPEC-REVIEW-REPORT.md` = `8d754358927282dc26a51d4da7a9e8f559660944`.
 
 No confirmed unresolved findings. This is scoped document conformance evidence, not whole-package QC, runtime testing, browser provisioning or implementation acceptance.
 
@@ -167,5 +167,24 @@ Exact source states for this review: `PLAN.md` = `6fcb34426c14a83a238a94f6d79d99
 | Phase 3 | 2 | One final phase-review milestone | Two cohesive delivery milestones are retained: they expose distinct integrated outcomes inside a narrow phase; splitting into quota-driven groups would add review overhead without independent value. |
 | Phase 4 | 3 | One final phase-review milestone | Three integrated steps establish foundations, real play and completed session behavior. |
 | Phase 5 | 2 | One final phase-review milestone | Two cohesive delivery milestones are retained: they expose distinct integrated outcomes inside a narrow phase; splitting into quota-driven groups would add review overhead without independent value. |
+
+Checks performed: owner semantic conformance review, current content-identity capture, generated hierarchy/dependency assertions where applicable, local-link/heading/content-boundary validation and staged whitespace checks. Runtime tests and browser setup have not run. No corrections or exceptions were required in this reviewed state; a later changed-input review appends another revision.
+
+## Revision 10
+
+Reviewed 24 October 2026, current cumulative scope 6.
+
+Reviewed integrated capability scope before numerical shape: Phase 1 contains the minimum complete classic game; subsequent phases add a bounded named capability on its verified predecessor. Every included SPEC contract has an outcome and an exit route. Each delivery milestone ends with a separate code-review/testing/report task; phase review has exactly one task and depends on all delivery milestone closures. Version scope does not collapse delivery into one phase. This assessment covers strategy; the retained or absent layout is not certified for the changed scope until the combined review.
+
+Exact source states for this review: `PLAN.md` = `1b63d0524b3ebda8b9e7d76c313c74cd7cfd35d0`; `PROJECT.md` = `27b571b16e6c78316d7feea10a83b677439c4afa`; `ARCHITECTURE.md` = `20928494cd7c2006544dcf0631de1d2741ab2643`; `DECOMPOSITION.md` = `338cd050cb7d66481e2b6489e1dde3e54aa515de`; `SPEC.md` = `79517958465616837a7e78cf46c2c09050186863`; `SPEC-REVIEW-REPORT.md` = `8d754358927282dc26a51d4da7a9e8f559660944`.
+
+| Group | Delivery count | Excluded reviews | Scope/count assessment |
+| --- | --- | --- | --- |
+| Phase 1 | 3 | One final phase-review milestone | Three integrated steps establish foundations, real play and completed session behavior. |
+| Phase 2 | 2 | One final phase-review milestone | Two cohesive delivery milestones are retained: they expose distinct integrated outcomes inside a narrow phase; splitting into quota-driven groups would add review overhead without independent value. |
+| Phase 3 | 2 | One final phase-review milestone | Two cohesive delivery milestones are retained: they expose distinct integrated outcomes inside a narrow phase; splitting into quota-driven groups would add review overhead without independent value. |
+| Phase 4 | 3 | One final phase-review milestone | Three integrated steps establish foundations, real play and completed session behavior. |
+| Phase 5 | 2 | One final phase-review milestone | Two cohesive delivery milestones are retained: they expose distinct integrated outcomes inside a narrow phase; splitting into quota-driven groups would add review overhead without independent value. |
+| Phase 6 | 2 | One final phase-review milestone | Two cohesive delivery milestones are retained: they expose distinct integrated outcomes inside a narrow phase; splitting into quota-driven groups would add review overhead without independent value. |
 
 Checks performed: owner semantic conformance review, current content-identity capture, generated hierarchy/dependency assertions where applicable, local-link/heading/content-boundary validation and staged whitespace checks. Runtime tests and browser setup have not run. No corrections or exceptions were required in this reviewed state; a later changed-input review appends another revision.

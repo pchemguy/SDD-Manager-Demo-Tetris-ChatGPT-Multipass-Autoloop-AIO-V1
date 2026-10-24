@@ -96,6 +96,22 @@ Prerequisite: Phase 4 completed, reviewed, integrated and published; preserve it
 
 Decision evidence: demonstrate the integrated milestone behavior and inspect usability of its changed controls. Report evidence for the human to continue, amend, simplify or stop; do not infer a new scope or implement automatic steering.
 
+### Phase 6 — Persistent configuration
+
+Outcome: Settings restore from cookies and shared URLs with independent precedence and reliable user-change synchronization. Scope: R21–R24 and persistent R19 lifetime. Release: v0.6.0.
+
+Scope rationale: Persistence is an independent adapter/resolution increment on the usable session configuration baseline. It adds no gameplay rules, server or saved game state. Two delivery milestones separate restoration from write synchronization.
+
+Prerequisite: Phase 5 completed, reviewed, integrated and published; preserve its acceptance and acquire an authorized range.
+
+| Milestone | Integrated outcome / exit |
+| --- | --- |
+| 6.1 — Settings resolution | Demonstrate per-key restoration before the first piece spawns. Finish its code review, checks and report with no required blocker. |
+| 6.2 — Settings synchronization | Demonstrate user-change cookie/URL updates and reload/reopen behavior. Finish its code review, checks and report with no required blocker. |
+| 6.3 — Phase review | Review the complete phase after delivery milestone closure; verify included contracts and prior-phase regressions, report findings/TODOs and confirm integration readiness. |
+
+Decision evidence: demonstrate the integrated milestone behavior and inspect usability of its changed controls. Report evidence for the human to continue, amend, simplify or stop; do not infer a new scope or implement automatic steering.
+
 ## Risks and exit evidence
 
 Timing/input ordering, top-out after a transaction, repeated sessions and cross-engine keyboard focus are primary risks. Reproducible model fixtures and real browser actions cover different failure classes. An unavailable required browser remains an explicit blocked check; proactively diagnose supported alternatives under the central policy before declaring a setup blocker.
