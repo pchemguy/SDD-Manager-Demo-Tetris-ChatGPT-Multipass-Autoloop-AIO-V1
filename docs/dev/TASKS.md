@@ -191,4 +191,38 @@ The hierarchy derives from [PLAN](PLAN.md), contracts from [SPEC](SPEC.md) and e
         - [ ] T-051 — Review, test and report phase 5
             Depends on: every delivery milestone in Phase 5 being complete and closed; tasks T-046, T-050.
             Evidence: review cross-milestone code, verify phase exits and prior behavior, fix blockers and commit docs/dev/reports/phases/5/PHASE-REPORT.md with findings/TODOs and acceptance evidence for subsequent phase closure/integration/release.
+
+## Phase 6 — Persistent configuration
+
+- [ ] Phase 6 — Persistent configuration
+    - [ ] Milestone 6.1 — Settings resolution
+        - [ ] T-052 — Implement allowlisted per-setting resolution
+            Scope: src/config/resolve.ts and tests/unit/resolve.test.ts. Depends on: T-051. Contracts: R21.
+            Evidence: Verify every key/value, independent URL/cookie/default precedence, explicit defaults, omission, malformed values, duplicate first-value semantics and unknown-key isolation.
+        - [ ] T-053 — Implement cookie reading and saving
+            Scope: src/browser/settings-storage.ts and tests/integration/settings-storage.test.ts. Depends on: T-052. Contracts: R21–R22, R24.
+            Evidence: Verify six corresponding cookie names/attributes, bounded parsing, independent decode failures, explicit URL saves and nonfatal denied/ignored writes.
+        - [ ] T-054 — Hydrate settings before game initialization
+            Scope: src/main.ts, src/browser/controller.ts and bootstrap integration tests. Depends on: T-053. Contracts: R18–R22.
+            Evidence: Verify resolved values determine the first piece policies and panel; save valid explicit URL values including defaults without overwriting omitted-setting cookies.
+        - [ ] T-055 — Review, test and report milestone 6.1
+            Depends on: T-052, T-053, T-054. Scope: whole milestone implementation and collaborating boundaries.
+            Evidence: separate code review and required focused/regression/browser checks; repair blockers; document findings and a TODO section in docs/dev/reports/phases/6/6.1.md.
+    - [ ] Milestone 6.2 — Settings synchronization
+        - [ ] T-056 — Implement parameter-preserving URL updates
+            Scope: src/browser/settings-storage.ts and tests/integration/settings-storage.test.ts. Depends on: T-055. Contracts: R23.
+            Evidence: Verify replaceState changes only the selected key, collapses its duplicates, preserves unrelated parameters/fragment and introduces no reload or history entry.
+        - [ ] T-057 — Connect per-setting persistence effects
+            Scope: src/config/settings.ts, src/browser/controller.ts and integration tests. Depends on: T-056. Contracts: R19–R24.
+            Evidence: Verify memory changes first, both cookie and URL writes are attempted independently, default-valued user changes are persisted and failures preserve gameplay.
+        - [ ] T-058 — Verify and document persisted settings in browsers
+            Scope: tests/e2e/persistence.spec.ts, README.md and docs/user/controls.md. Depends on: T-057. Contracts: R21–R24.
+            Evidence: Verify mixed sources, every key, explicit defaults, omissions, invalid values, reload/reopen, a copied settings URL and denied-adapter behavior on an HTTP(S) origin in both isolated engines.
+        - [ ] T-059 — Review, test and report milestone 6.2
+            Depends on: T-056, T-057, T-058. Scope: whole milestone implementation and collaborating boundaries.
+            Evidence: separate code review and required focused/regression/browser checks; repair blockers; document findings and a TODO section in docs/dev/reports/phases/6/6.2.md.
+    - [ ] Milestone 6.3 — Phase review
+        - [ ] T-060 — Review, test and report phase 6
+            Depends on: every delivery milestone in Phase 6 being complete and closed; tasks T-055, T-059.
+            Evidence: review cross-milestone code, verify phase exits and prior behavior, fix blockers and commit docs/dev/reports/phases/6/PHASE-REPORT.md with findings/TODOs and acceptance evidence for subsequent phase closure/integration/release.
             Include docs/dev/reports/IMPLEMENTATION-REPORT.md with full task-list result and aggregated unresolved/deferred TODOs, options and provenance.
