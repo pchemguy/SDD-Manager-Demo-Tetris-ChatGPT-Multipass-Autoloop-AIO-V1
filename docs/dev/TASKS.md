@@ -157,4 +157,38 @@ The hierarchy derives from [PLAN](PLAN.md), contracts from [SPEC](SPEC.md) and e
         - [ ] T-042 — Review, test and report phase 4
             Depends on: every delivery milestone in Phase 4 being complete and closed; tasks T-033, T-037, T-041.
             Evidence: review cross-milestone code, verify phase exits and prior behavior, fix blockers and commit docs/dev/reports/phases/4/PHASE-REPORT.md with findings/TODOs and acceptance evidence for subsequent phase closure/integration/release.
+
+## Phase 5 — Session configuration
+
+- [ ] Phase 5 — Session configuration
+    - [ ] Milestone 5.1 — Session settings
+        - [ ] T-043 — Define typed session settings and defaults
+            Scope: src/config/settings.ts and tests/unit/settings.test.ts. Depends on: T-042. Contracts: R18–R19.
+            Evidence: Verify every allowed value/default and separate settings lifetime from game restart. Do not add persistence adapters.
+        - [ ] T-044 — Implement the native settings side panel
+            Scope: src/ui/settings-panel.ts, src/styles.css and tests/e2e/settings.spec.ts. Depends on: T-043. Contracts: R6, R18.
+            Evidence: Verify labels, keyboard operation, current values and settings focus without gameplay input leakage in both engines.
+        - [ ] T-045 — Expose and render the next-piece preview
+            Scope: src/core/randomizer.ts, src/core/session.ts, src/ui/view.ts and focused tests. Depends on: T-044. Contracts: R5, R9, R18.
+            Evidence: Verify preview matches the next spawn, toggling/rendering consumes no shapes, and empty/populated hold cases preserve queue semantics.
+        - [ ] T-046 — Review, test and report milestone 5.1
+            Depends on: T-043, T-044, T-045. Scope: whole milestone implementation and collaborating boundaries.
+            Evidence: separate code review and required focused/regression/browser checks; repair blockers; document findings and a TODO section in docs/dev/reports/phases/5/5.1.md.
+    - [ ] Milestone 5.2 — Live policy integration
+        - [ ] T-047 — Apply live feature toggles and session retention
+            Scope: src/browser/controller.ts, src/ui/view.ts, src/config/settings.ts and regression tests. Depends on: T-046. Contracts: R13, R15, R18–R19.
+            Evidence: Verify all ghost modes, disabled drop/hold no-ops, retained held piece/eligibility, active-penetrator hold prohibition and restart retention.
+        - [ ] T-048 — Capture per-piece locking policies
+            Scope: src/core/session.ts, src/browser/controller.ts and tests/unit/locking.test.ts. Depends on: T-047. Contracts: R12, R16, R20.
+            Evidence: Verify every general/hard-drop policy combination, changes during a running deadline, incoming hold/restart snapshots and penetrator landing behavior.
+        - [ ] T-049 — Verify and document session configuration
+            Scope: tests/e2e/settings.spec.ts, README.md and docs/user/controls.md. Depends on: T-048. Contracts: R18–R20.
+            Evidence: Verify defaults, next preview, live controls and reload-to-default behavior in both engines; preserve classic/assistance/penetrator regressions and document next-piece policy timing.
+        - [ ] T-050 — Review, test and report milestone 5.2
+            Depends on: T-047, T-048, T-049. Scope: whole milestone implementation and collaborating boundaries.
+            Evidence: separate code review and required focused/regression/browser checks; repair blockers; document findings and a TODO section in docs/dev/reports/phases/5/5.2.md.
+    - [ ] Milestone 5.3 — Phase review
+        - [ ] T-051 — Review, test and report phase 5
+            Depends on: every delivery milestone in Phase 5 being complete and closed; tasks T-046, T-050.
+            Evidence: review cross-milestone code, verify phase exits and prior behavior, fix blockers and commit docs/dev/reports/phases/5/PHASE-REPORT.md with findings/TODOs and acceptance evidence for subsequent phase closure/integration/release.
             Include docs/dev/reports/IMPLEMENTATION-REPORT.md with full task-list result and aggregated unresolved/deferred TODOs, options and provenance.
