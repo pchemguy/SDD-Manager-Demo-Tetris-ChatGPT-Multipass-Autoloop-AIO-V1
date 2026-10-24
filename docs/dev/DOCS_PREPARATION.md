@@ -8,7 +8,7 @@
 - Decision delegation: after the first PROJECT approval, resolve new material decisions within the predefined scopes using agent judgment, with visible rationale and durable owning-document decisions.
 - Tracking: enabled for documentation and implementation by root AGENTS.md. Native milestone 1, `sdd-docs-main`, and issues 1–9 correspond to DOCS-001–009; exact standard content and associations were read back before repository modifications.
 - Publication: push and verify each owned commit before advancing. Reporting: Standard after Explicit entry reporting.
-- Next boundary: publish/close DOCS-008, then stop before DOCS-009, package QC, integration and implementation.
+- Next boundary: the six-scope loop is complete through DOCS-008. Stop and await human direction before DOCS-009, package QC, documentation integration or implementation.
 - Final authorized stop: after pass 6 DOCS-008 publication and issue closure, before DOCS-009, whole-package QC, documentation integration and implementation. Keep DOCS-009 and the documentation milestone open.
 
 ## Scope sequence
@@ -59,8 +59,8 @@ Material unresolved decisions: none blocking the initial brief. Exact gameplay c
 - Initialization continuation: all four initially existed; no mixed-presence continuation pause applies.
 - Package: repository-vendored SDD Manager 0.15.2; discovery completed. Linux host, Git, Node 24.19.0 and Python 3.12.14 are available. Root Windows shell policy is inapplicable to this execution host. Browser-independent documentation needs no browser provisioning; BROWSER_DEV_POLICY governs subsequent browser design/setup/verification.
 - Current reset: prior scope 5 completed through DOCS-008 at `0b51208a461fd92f13fd0c5129720a2fbb8e291f`; advance to predefined cumulative scope 6. Authorized by first PROJECT approval and requested autoloop; retain all document bytes as revision inputs and reset only checkboxes/control.
-- Prior-pass evidence: none.
+- Prior-pass evidence: the Current reset entry identifies the verified previous-scope checkpoint; earlier scope decisions and source states are preserved in Git. Historical acceptance does not certify a later scope.
 
 ## Pending transitions
 
-The current scope-6 DOCS-008 checkpoint awaits publication and exact issue-8 closure readback at the time of this record. Earlier required checkpoint effects were verified before this document was authored; Git and issue evidence identify those commits. Reconcile actual later effects before replay. After closure, stop before DOCS-009.
+Final TASKS checkpoint `af3e07f08595d0799190682f9cf9a51329de4615` was published with exact remote readback and issue 8 was read back closed. Final boundary checks confirmed issues 1–8 closed, issue 9 open and milestone 1 open; main remains at the initial baseline. No package QC or implementation has run. This bounded control/handoff correction still requires its ordinary publication/readback; then retain the requested stop. Do not repeat completed issue closures or infer authority for DOCS-009.

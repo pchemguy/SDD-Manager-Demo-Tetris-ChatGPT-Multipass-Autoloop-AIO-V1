@@ -6,7 +6,7 @@ Outcome: current cumulative scope 6 document roots and required adjacent per-doc
 
 ## Workflow and sources
 
-- Workflow/stage/owner: main development, documentation preparation; sdd-manage coordinates and sdd-design owns the next PROJECT proposal.
+- Workflow/stage/owner: main development; six-scope documentation loop completed through DOCS-008. sdd-manage holds the stop. If the human advances to DOCS-009, sdd-verify owns whole-package QC under coordinator control; no implementation range is authorized.
 - Governing records: [DOCS_TASKS](DOCS_TASKS.md), [DOCS_PREPARATION](DOCS_PREPARATION.md), root AGENTS.md and its discovery/browser policies.
 - Required package: repository `.agents/plugins/sdd-manager`, version 0.15.2. Standalone Technical Writing Assistant is also available. Linux with Git, Node and Python is ready for documentation work.
 
@@ -27,5 +27,6 @@ Outcome: current cumulative scope 6 document roots and required adjacent per-doc
 
 ## Pending work and next action
 
-- Publish/read back scope-6 DOCS-008 and close/read back issue 8. Then stop; DOCS-009 and issue 9 remain unchecked/open, the documentation milestone stays open and main remains unmerged.
-- Recover later publication/issue effects from Git and owning issue comments; do not repeat an already verified effect.
+- Final TASKS checkpoint `af3e07f08595d0799190682f9cf9a51329de4615` is published and issue 8 is closed, both verified. DOCS-001–008 are complete in the current scope; DOCS-009 remains unchecked, issue 9 and documentation milestone 1 remain open, and main is unmerged.
+- This control-record correction awaits its publication/readback at the snapshot. No hosted effect is pending; retain completed issue closures. Recover any later effects from Git and their owning issue evidence.
+- Next action: await human direction to advance to package QC. That direction selects neither implementation nor an additional scope pass.
