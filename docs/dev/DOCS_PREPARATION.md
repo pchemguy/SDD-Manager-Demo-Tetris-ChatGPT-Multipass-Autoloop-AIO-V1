@@ -8,7 +8,7 @@
 - Decision delegation: after the first PROJECT approval, resolve new material decisions within the predefined scopes using agent judgment, with visible rationale and durable owning-document decisions.
 - Tracking: enabled for documentation and implementation by root AGENTS.md. Native milestone 1, `sdd-docs-main`, and issues 1–9 correspond to DOCS-001–009; exact standard content and associations were read back before repository modifications.
 - Publication: push and verify each owned commit before advancing. Reporting: Standard after Explicit entry reporting.
-- Next boundary: publish/close DOCS-007, then continue DOCS-008.
+- Next boundary: publish/close DOCS-008, then reset for the next predefined scope.
 - Final authorized stop: after pass 6 DOCS-008 publication and issue closure, before DOCS-009, whole-package QC, documentation integration and implementation. Keep DOCS-009 and the documentation milestone open.
 
 ## Scope sequence
@@ -47,7 +47,7 @@ The user confirmed the following proposals with “Yes” on 24 October 2026. Th
 | DOCS-005 | Scope 2: `SPEC.md` blob `04caf55bd84442a4bc9908920b24bc4d9965ac96`; accepted under autodoc/autoloop checkpoint preapproval, owner sdd-specify. QC: `SPEC-REVIEW-REPORT.md` (blob `f074a8a9a17a15971b2c7ee6928b1a08d34ceaba`). |
 | DOCS-006 | Scope 2: `PLAN.md` blob `4479752f4d120df97a240acb47c3ad0307e4ed51`; accepted under autodoc/autoloop checkpoint preapproval, owner sdd-plan. QC: `PLAN-REVIEW-REPORT.md` (blob `5d9e2f6efca9267161d5e6b8cd065a921a6cd707`). |
 | DOCS-007 | Scope 2: `layout.md` blob `be1140ea5ed4a3691e93a2035d961b128255f324`; accepted under autodoc/autoloop checkpoint preapproval, owner sdd-plan. QC: `PLAN-REVIEW-REPORT.md` (blob `30de54da36a6eff827a8e66dd58b83c5502d0849`). |
-| DOCS-008 | Scope 2 pending current-scope review/preapproval; retained previous content is input, not current approval. |
+| DOCS-008 | Scope 2: `TASKS.md` blob `a7844a05386a9f9018a8c11af7c5f80e28898047`; accepted under autodoc/autoloop checkpoint preapproval, owner sdd-tasks. QC: `TASKS-REVIEW-REPORT.md` (blob `c67989d10bbf11870b51bb56b10b1b028ad2d10e`). |
 | DOCS-009 | Unchecked and unselected; remains outside the authorized autoloop boundary. |
 
 Material unresolved decisions: none blocking the initial brief. Exact gameplay contracts belong to SPEC; architecture, delivery and task details remain with their respective owners.
@@ -63,4 +63,4 @@ Material unresolved decisions: none blocking the initial brief. Exact gameplay c
 
 ## Pending transitions
 
-The current scope-2 DOCS-007 checkpoint awaits publication and exact issue-7 closure readback at the time of this record. Earlier required checkpoint effects were verified before this document was authored; Git and issue evidence identify those commits. Reconcile actual later effects before replay. Continue in document dependency order after closure.
+The current scope-2 DOCS-008 checkpoint awaits publication and exact issue-8 closure readback at the time of this record. Earlier required checkpoint effects were verified before this document was authored; Git and issue evidence identify those commits. Reconcile actual later effects before replay. After closure, reset only for the next predefined scope.
