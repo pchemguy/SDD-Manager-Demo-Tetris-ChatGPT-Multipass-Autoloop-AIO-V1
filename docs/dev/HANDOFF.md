@@ -1,8 +1,8 @@
 # Project handoff
 
-Checkpoint: DOCS-009 whole-package review selected; bounded corrections underway.
+Checkpoint: DOCS-009 whole-package QC passed; integration lifecycle remains pending.
 
-Outcome: six cumulative scopes are retained; package findings await correction/recheck.
+Outcome: all nine preparation tasks have passed their current-scope document gates; package findings DOCS-QC-01–04 are resolved. Application implementation has not started.
 
 ## Workflow and sources
 
@@ -27,6 +27,6 @@ Outcome: six cumulative scopes are retained; package findings await correction/r
 
 ## Pending work and next action
 
-- Resolve DOCS-QC-01–03, recheck affected source identities and complete DOCS-009.
-- Publish before issue 9 closure; explicitly merge to main, verify/publish the merge, then close/read back milestone 1.
-- Stop before implementation, provisioning and release publication. Use the canonical origin recorded in DOCS_PREPARATION; repository identity and retained tracking objects were verified after rename.
+- Publish/read back this package completion, then close/read back issue 9.
+- Explicitly merge design-docs/main into actual default main, verify merged product/report identities and publish; only then close/read back documentation milestone 1.
+- Reconcile the handoff to main during the merge and stop before implementation. No implementation-phase objects or release are activated.

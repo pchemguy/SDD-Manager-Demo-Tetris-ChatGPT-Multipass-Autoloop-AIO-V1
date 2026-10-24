@@ -2,11 +2,11 @@
 
 ## Current gate
 
-State: Ready for its selected documentation boundary; implementation activation is not selected. Current scope: cumulative item 6. Owner: sdd-tasks.
+State: Ready for documentation integration subject to passing package QC. Reviewed whole-package correction state, 24 October 2026.
 
-Exact reviewed/governing Git blob identities: `TASKS.md` = `29fe918cbe4de001de0fb792bbc81e202cfe15cb`; `SPEC.md` = `79517958465616837a7e78cf46c2c09050186863`; `SPEC-REVIEW-REPORT.md` = `8d754358927282dc26a51d4da7a9e8f559660944`; `PLAN.md` = `1b63d0524b3ebda8b9e7d76c313c74cd7cfd35d0`; `layout.md` = `b4d204361c6f8817060dc3657bb6371ba7150959`; `PLAN-REVIEW-REPORT.md` = `526b5fbd6188fdc44aa82c23158bee81bb6f6692`.
+Exact reviewed/governing Git blob identities: `TASKS.md` = `998e2a56e78c77b1d870dd43b759e786e9820c2d`; `SPEC.md` = `1ac0f8e1f15564c830b025781565bb0b1b0d3d1c`; `SPEC-REVIEW-REPORT.md` = `a4f56a8ac8d5a2a716a7a04e2789ef3e43914149`; `PLAN.md` = `2e77bed6bcfaf4e02ffc95fe67434ceb25d338fd`; `layout.md` = `b4d204361c6f8817060dc3657bb6371ba7150959`; `PLAN-REVIEW-REPORT.md` = `c676b6cc0bd7222742925ba53f580dc6d0292cc1`.
 
-No confirmed unresolved findings. This is scoped document conformance evidence, not whole-package QC, runtime testing, browser provisioning or implementation acceptance.
+No unresolved findings. Earlier review observations are retained below; the latest revision owns current readiness. Runtime evidence and implementation activation remain separate.
 
 ## Initial review
 
@@ -140,3 +140,11 @@ Exact source states for this review: `TASKS.md` = `29fe918cbe4de001de0fb792bbc81
 | Milestone 6.2 | 3 | T-059; phase review T-060 counted separately | Three bounded delivery units separate the actual cooperating responsibilities and include tests/docs. |
 
 Checks performed: owner semantic conformance review, current content-identity capture, generated hierarchy/dependency assertions where applicable, local-link/heading/content-boundary validation and staged whitespace checks. Runtime tests and browser setup have not run. No corrections or exceptions were required in this reviewed state; a later changed-input review appends another revision.
+
+## Revision 6
+
+Package-QC correction/recheck, 24 October 2026. DOCS-QC-03 is resolved in T-049/T-058: label the interim Phase 5 assertion and explicitly migrate the existing settings suite in Phase 6. No task was added, removed, checked or renumbered. Rechecked prerequisites, test/guide edit scope, explicit milestone/phase reviews and unchanged 40-delivery/20-review decomposition.
+
+Exact reviewed states: `TASKS.md` = `998e2a56e78c77b1d870dd43b759e786e9820c2d`; `SPEC.md` = `1ac0f8e1f15564c830b025781565bb0b1b0d3d1c`; `SPEC-REVIEW-REPORT.md` = `a4f56a8ac8d5a2a716a7a04e2789ef3e43914149`; `PLAN.md` = `2e77bed6bcfaf4e02ffc95fe67434ceb25d338fd`; `layout.md` = `b4d204361c6f8817060dc3657bb6371ba7150959`; `PLAN-REVIEW-REPORT.md` = `c676b6cc0bd7222742925ba53f580dc6d0292cc1`.
+
+Checks: semantic conformance to accepted scope, boundary/policy interactions, retained phase/task coverage and source-identity currency. Existing component, count and hierarchy assessments remain applicable: no IDs, parent groups, allowed settings or accepted behaviors were added or removed. All located package findings affecting this gate are resolved; no exception is needed. Application tests were not run because there is no implementation.

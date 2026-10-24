@@ -183,7 +183,7 @@ The hierarchy derives from [PLAN](PLAN.md), contracts from [SPEC](SPEC.md) and e
             Evidence: Verify every general/hard-drop policy combination, changes during a running deadline, incoming hold/restart snapshots and penetrator landing behavior.
         - [ ] T-049 — Verify and document session configuration
             Scope: tests/e2e/settings.spec.ts, README.md and docs/user/controls.md. Depends on: T-048. Contracts: R18–R20.
-            Evidence: Verify defaults, next preview, live controls and reload-to-default behavior in both engines; preserve classic/assistance/penetrator regressions and document next-piece policy timing.
+            Evidence: Verify defaults, next preview, live controls and the Phase 5 interim reload-to-default behavior in both engines; preserve classic/assistance/penetrator regressions and document next-piece policy timing.
         - [ ] T-050 — Review, test and report milestone 5.2
             Depends on: T-047, T-048, T-049. Scope: whole milestone implementation and collaborating boundaries.
             Evidence: separate code review and required focused/regression/browser checks; repair blockers; document findings and a TODO section in docs/dev/reports/phases/5/5.2.md.
@@ -216,8 +216,8 @@ The hierarchy derives from [PLAN](PLAN.md), contracts from [SPEC](SPEC.md) and e
             Scope: src/config/settings.ts, src/browser/controller.ts and integration tests. Depends on: T-056. Contracts: R19–R24.
             Evidence: Verify memory changes first, both cookie and URL writes are attempted independently, default-valued user changes are persisted and failures preserve gameplay.
         - [ ] T-058 — Verify and document persisted settings in browsers
-            Scope: tests/e2e/persistence.spec.ts, README.md and docs/user/controls.md. Depends on: T-057. Contracts: R21–R24.
-            Evidence: Verify mixed sources, every key, explicit defaults, omissions, invalid values, reload/reopen, a copied settings URL and denied-adapter behavior on an HTTP(S) origin in both isolated engines.
+            Scope: tests/e2e/persistence.spec.ts, tests/e2e/settings.spec.ts, README.md and docs/user/controls.md. Depends on: T-057. Contracts: R21–R24.
+            Evidence: Update the existing settings-suite reload-to-default assertion to R21 source resolution while retaining its other checks. Verify mixed sources, every key, explicit defaults, omissions, invalid values, reload/reopen, a copied settings URL and denied-adapter behavior on an HTTP(S) origin in both isolated engines.
         - [ ] T-059 — Review, test and report milestone 6.2
             Depends on: T-056, T-057, T-058. Scope: whole milestone implementation and collaborating boundaries.
             Evidence: separate code review and required focused/regression/browser checks; repair blockers; document findings and a TODO section in docs/dev/reports/phases/6/6.2.md.

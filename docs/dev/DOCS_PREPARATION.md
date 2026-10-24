@@ -8,7 +8,7 @@
 - Decision delegation: after the first PROJECT approval, resolve new material decisions within the predefined scopes using agent judgment, with visible rationale and durable owning-document decisions.
 - Tracking: enabled for documentation and implementation by root AGENTS.md. Native milestone 1, `sdd-docs-main`, and issues 1–9 correspond to DOCS-001–009; exact standard content and associations were read back before repository modifications.
 - Publication: push and verify each owned commit before advancing. Reporting: Standard after Explicit entry reporting.
-- Next boundary: finish selected DOCS-009 package QC and repairs, publish its result and close/read back issue 9, explicitly merge/verify/publish to main, close/read back milestone 1 and stop before implementation.
+- Next boundary: publish/read back package completion, close/read back issue 9, merge/verify/publish to main, then close/read back milestone 1 and stop before implementation.
 - Final authorized stop: documentation complete and integrated; pause before implementation. The user advanced the former autodoc stop with “complete doc design” on 24 October 2026. No new scope pass or implementation range is selected.
 
 ## Scope sequence
@@ -41,14 +41,14 @@ The user confirmed the following proposals with “Yes” on 24 October 2026. Th
 | Task | Current evidence / decision basis |
 | --- | --- |
 | DOCS-001 | All four root records existed at baseline `19e560c7b3fb680c2589902ba8c3466f795249d4`; retained byte for byte. DOCS_TASKS is instantiated from the running package with only DOCS-001 checked. This record and HANDOFF are established in the same initialization commit. |
-| DOCS-002 | Scope 6: `PROJECT.md` blob `27b571b16e6c78316d7feea10a83b677439c4afa`; accepted under autodoc/autoloop checkpoint preapproval, owner sdd-design. Owner consistency/content review passed. |
+| DOCS-002 | Scope 6: `PROJECT.md` blob `feb09dbc82b72e060d66d944542f5017ef2a5ff9`; accepted under the retained scoped preapproval. Package corrections preserve behavior/scope; current owner recheck passed. |
 | DOCS-003 | Scope 6: `ARCHITECTURE.md` blob `20928494cd7c2006544dcf0631de1d2741ab2643`; accepted under autodoc/autoloop checkpoint preapproval, owner sdd-design. Owner consistency/content review passed. |
 | DOCS-004 | Scope 6: `DECOMPOSITION.md` blob `338cd050cb7d66481e2b6489e1dde3e54aa515de`; accepted under autodoc/autoloop checkpoint preapproval, owner sdd-design. Owner consistency/content review passed. |
-| DOCS-005 | Scope 6: `SPEC.md` blob `79517958465616837a7e78cf46c2c09050186863`; accepted under autodoc/autoloop checkpoint preapproval, owner sdd-specify. QC: `SPEC-REVIEW-REPORT.md` (blob `8d754358927282dc26a51d4da7a9e8f559660944`). |
-| DOCS-006 | Scope 6: `PLAN.md` blob `1b63d0524b3ebda8b9e7d76c313c74cd7cfd35d0`; accepted under autodoc/autoloop checkpoint preapproval, owner sdd-plan. QC: `PLAN-REVIEW-REPORT.md` (blob `0dd2ce3f973372363182e77f2c77636594cb2e2c`). |
-| DOCS-007 | Scope 6: `layout.md` blob `b4d204361c6f8817060dc3657bb6371ba7150959`; accepted under autodoc/autoloop checkpoint preapproval, owner sdd-plan. QC: `PLAN-REVIEW-REPORT.md` (blob `526b5fbd6188fdc44aa82c23158bee81bb6f6692`). |
-| DOCS-008 | Scope 6: `TASKS.md` blob `29fe918cbe4de001de0fb792bbc81e202cfe15cb`; accepted under autodoc/autoloop checkpoint preapproval, owner sdd-tasks. QC: `TASKS-REVIEW-REPORT.md` (blob `36e984b647c98e7f6c4fef03e4f86b1b800a5703`). |
-| DOCS-009 | Selected by the user’s “complete doc design” instruction on 24 October 2026. Package review and bounded repairs are underway; DOCS-QC-REPORT.md owns findings. Unchecked until passing completion. |
+| DOCS-005 | Scope 6: `SPEC.md` blob `1ac0f8e1f15564c830b025781565bb0b1b0d3d1c`; accepted under the retained scoped preapproval. Package corrections preserve behavior/scope; current owner recheck passed. QC: `SPEC-REVIEW-REPORT.md` blob `a4f56a8ac8d5a2a716a7a04e2789ef3e43914149`. |
+| DOCS-006 | Scope 6: `PLAN.md` blob `2e77bed6bcfaf4e02ffc95fe67434ceb25d338fd`; accepted under the retained scoped preapproval. Package corrections preserve behavior/scope; current owner recheck passed. QC: `PLAN-REVIEW-REPORT.md` blob `c676b6cc0bd7222742925ba53f580dc6d0292cc1`. |
+| DOCS-007 | Scope 6: `layout.md` blob `b4d204361c6f8817060dc3657bb6371ba7150959`; accepted under the retained scoped preapproval. Package corrections preserve behavior/scope; current owner recheck passed. QC: `PLAN-REVIEW-REPORT.md` blob `c676b6cc0bd7222742925ba53f580dc6d0292cc1`. |
+| DOCS-008 | Scope 6: `TASKS.md` blob `998e2a56e78c77b1d870dd43b759e786e9820c2d`; accepted under the retained scoped preapproval. Package corrections preserve behavior/scope; current owner recheck passed. QC: `TASKS-REVIEW-REPORT.md` blob `0783307f2a48f189c366145599b8eaaed2c28ab8`. |
+| DOCS-009 | Whole-package QC passed; DOCS-QC-01–04 resolved. DOCS-QC-REPORT.md blob `c8287f651c8f23a42b4e9b8f3565f3a67581d34e`; completion checkbox, report and handoff submitted together. User authority: “complete doc design”, 24 October 2026. |
 
 Material unresolved decisions: none blocking the initial brief. Exact gameplay contracts belong to SPEC; architecture, delivery and task details remain with their respective owners.
 
@@ -63,6 +63,4 @@ Material unresolved decisions: none blocking the initial brief. Exact gameplay c
 
 ## Pending transitions
 
-Resolve DOCS-QC-01–03 and recheck affected owner gates. Required order: passing package publication → issue 9 closure/readback → explicit merge/verification/publication to main → milestone 1 closure/readback → preimplementation stop. Existing issues 1–8 stay closed; no reset is selected.
-
-Canonical repository: pchemguy/SDD-Manager-Demo-Tetris-ChatGPT-V8-Multipass-Autoloop-AllInOne, GitHub ID 1431887015. The former URL redirects to that identity; matching main/design-docs heads and the same nine issue/milestone associations were verified before origin was updated. No destination or tracking identity was substituted.
+Passing package/report/checkoff/handoff publication is pending at this snapshot; then issue 9 closure, explicit two-parent integration into main, merged-state verification/publication and milestone 1 closure require readback in that order. Issues 1–8 remain closed. No implementation range or new pass is authorized. Canonical repository identity 1431887015 and the renamed origin were verified during package entry.

@@ -2,11 +2,11 @@
 
 ## Current gate
 
-State: Ready for TASKS derivation. Current scope: cumulative item 6. Owner: sdd-plan.
+State: Ready for TASKS/package review. Reviewed whole-package correction state, 24 October 2026.
 
-Exact reviewed/governing Git blob identities: `PLAN.md` = `1b63d0524b3ebda8b9e7d76c313c74cd7cfd35d0`; `layout.md` = `b4d204361c6f8817060dc3657bb6371ba7150959`; `PROJECT.md` = `27b571b16e6c78316d7feea10a83b677439c4afa`; `ARCHITECTURE.md` = `20928494cd7c2006544dcf0631de1d2741ab2643`; `DECOMPOSITION.md` = `338cd050cb7d66481e2b6489e1dde3e54aa515de`; `SPEC.md` = `79517958465616837a7e78cf46c2c09050186863`; `SPEC-REVIEW-REPORT.md` = `8d754358927282dc26a51d4da7a9e8f559660944`.
+Exact reviewed/governing Git blob identities: `PLAN.md` = `2e77bed6bcfaf4e02ffc95fe67434ceb25d338fd`; `layout.md` = `b4d204361c6f8817060dc3657bb6371ba7150959`; `PROJECT.md` = `feb09dbc82b72e060d66d944542f5017ef2a5ff9`; `ARCHITECTURE.md` = `20928494cd7c2006544dcf0631de1d2741ab2643`; `DECOMPOSITION.md` = `338cd050cb7d66481e2b6489e1dde3e54aa515de`; `SPEC.md` = `1ac0f8e1f15564c830b025781565bb0b1b0d3d1c`; `SPEC-REVIEW-REPORT.md` = `a4f56a8ac8d5a2a716a7a04e2789ef3e43914149`.
 
-No confirmed unresolved findings. This is scoped document conformance evidence, not whole-package QC, runtime testing, browser provisioning or implementation acceptance.
+No unresolved findings. Earlier review observations are retained below; the latest revision owns current readiness. Runtime evidence and implementation activation remain separate.
 
 ## Initial review
 
@@ -207,3 +207,11 @@ Exact source states for this review: `PLAN.md` = `1b63d0524b3ebda8b9e7d76c313c74
 | Phase 6 | 2 | One final phase-review milestone | Two cohesive delivery milestones are retained: they expose distinct integrated outcomes inside a narrow phase; splitting into quota-driven groups would add review overhead without independent value. |
 
 Checks performed: owner semantic conformance review, current content-identity capture, generated hierarchy/dependency assertions where applicable, local-link/heading/content-boundary validation and staged whitespace checks. Runtime tests and browser setup have not run. No corrections or exceptions were required in this reviewed state; a later changed-input review appends another revision.
+
+## Revision 12
+
+Package-QC correction/recheck, 24 October 2026. DOCS-QC-03 is resolved: Phase 5 session lifetime is an explicit interim exit, and Phase 6 owns persistence plus the earlier test-expectation migration. Additional DOCS-QC-04 clarification: the standing user release grant applies after authorized implementation phases; PLAN does not request an extra release approval. Rechecked bounded phase exits, all contract delivery routes, versions, layout and the six-phase count rationale.
+
+Exact reviewed states: `PLAN.md` = `2e77bed6bcfaf4e02ffc95fe67434ceb25d338fd`; `layout.md` = `b4d204361c6f8817060dc3657bb6371ba7150959`; `PROJECT.md` = `feb09dbc82b72e060d66d944542f5017ef2a5ff9`; `ARCHITECTURE.md` = `20928494cd7c2006544dcf0631de1d2741ab2643`; `DECOMPOSITION.md` = `338cd050cb7d66481e2b6489e1dde3e54aa515de`; `SPEC.md` = `1ac0f8e1f15564c830b025781565bb0b1b0d3d1c`; `SPEC-REVIEW-REPORT.md` = `a4f56a8ac8d5a2a716a7a04e2789ef3e43914149`.
+
+Checks: semantic conformance to accepted scope, boundary/policy interactions, retained phase/task coverage and source-identity currency. Existing component, count and hierarchy assessments remain applicable: no IDs, parent groups, allowed settings or accepted behaviors were added or removed. All located package findings affecting this gate are resolved; no exception is needed. Application tests were not run because there is no implementation.

@@ -10,7 +10,7 @@ Every delivery task includes meaningful tests and affected documentation. Contro
 
 Every delivery milestone ends with explicit implementation code review, relevant tests/regressions, blocker repair and a committed milestone report containing a TODO section. Each phase ends in a separate review milestone with exactly one phase code review/testing/report task, after all delivery milestones and their issues are complete/closed. The last phase review also produces the final implementation report and aggregated unresolved TODOs. Tests alone do not substitute for code review.
 
-Complete phases integrate with an explicit two-parent merge, merged-state checks and verified publication to the default branch. Release each completed, verified and integrated phase using its version, tag and exact finalized release notes. Partial task ranges remain on their phase branch. Implementation and release execution require their own authorization; this plan supplies delivery strategy.
+Complete phases integrate with an explicit two-parent merge, merged-state checks and verified publication to the default branch. Release each completed, verified and integrated phase using its version, tag and exact finalized release notes. Partial task ranges remain on their phase branch. Implementation requires a selected range. Once implementation is authorized, the standing user instruction authorizes a release after each completed, verified and integrated phase; no separate release approval is required.
 
 ## Phases and milestones
 
@@ -120,6 +120,6 @@ Phase exits require scoped acceptance, relevant regressions, accurate user/setup
 
 ## Intermediate delivery acceptance
 
-Phase 1 retains its simple classic behavior: strict unshifted rotations, independent uniform shape draws and locking on a failed downward attempt. Phase 2 replaces those interim rules with the target R5/R10/R12 guarantees and adds hard drop. Phase 3 supplies hold and ghost presentation. The full target remains specified in SPEC; earlier phase exits verify their included subset and do not claim the later guarantees.
+Phase 1 retains its simple classic behavior: strict unshifted rotations, independent uniform shape draws and locking on a failed downward attempt. Phase 2 replaces those interim rules with the target R5/R10/R12 guarantees and adds hard drop. Phase 3 supplies hold and ghost presentation. Phase 5 settings survive in-page restart but use defaults after reload and do not read or write URL/cookie settings. Phase 6 replaces that interim lifetime with R19/R21–R24 persistence, including updating the earlier settings-suite reload expectation while retaining its other assertions. The full target remains specified in SPEC; earlier phase exits verify their included subset and do not claim the later guarantees.
 
 These separate increments preserve a useful game at every release. Repeated two-milestone phases are retained for distinct coherent outcomes, not numerical quotas; merging player assistance into the movement phase would delay verification of the independently useful drop/timing path.

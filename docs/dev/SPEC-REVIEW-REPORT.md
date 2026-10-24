@@ -2,11 +2,11 @@
 
 ## Current gate
 
-State: Ready for PLAN authoring. Current scope: cumulative item 6. Owner: sdd-specify.
+State: Ready for PLAN/package review. Reviewed whole-package correction state, 24 October 2026.
 
-Exact reviewed/governing Git blob identities: `SPEC.md` = `79517958465616837a7e78cf46c2c09050186863`; `PROJECT.md` = `27b571b16e6c78316d7feea10a83b677439c4afa`; `ARCHITECTURE.md` = `20928494cd7c2006544dcf0631de1d2741ab2643`; `DECOMPOSITION.md` = `338cd050cb7d66481e2b6489e1dde3e54aa515de`.
+Exact reviewed/governing Git blob identities: `SPEC.md` = `1ac0f8e1f15564c830b025781565bb0b1b0d3d1c`; `PROJECT.md` = `feb09dbc82b72e060d66d944542f5017ef2a5ff9`; `ARCHITECTURE.md` = `20928494cd7c2006544dcf0631de1d2741ab2643`; `DECOMPOSITION.md` = `338cd050cb7d66481e2b6489e1dde3e54aa515de`.
 
-No confirmed unresolved findings. This is scoped document conformance evidence, not whole-package QC, runtime testing, browser provisioning or implementation acceptance.
+No unresolved findings. Earlier review observations are retained below; the latest revision owns current readiness. Runtime evidence and implementation activation remain separate.
 
 ## Initial review
 
@@ -67,3 +67,11 @@ Reviewed current requirements against purpose/non-goals, ownership, dependency d
 Exact source states for this review: `SPEC.md` = `79517958465616837a7e78cf46c2c09050186863`; `PROJECT.md` = `27b571b16e6c78316d7feea10a83b677439c4afa`; `ARCHITECTURE.md` = `20928494cd7c2006544dcf0631de1d2741ab2643`; `DECOMPOSITION.md` = `338cd050cb7d66481e2b6489e1dde3e54aa515de`.
 
 Checks performed: owner semantic conformance review, current content-identity capture, generated hierarchy/dependency assertions where applicable, local-link/heading/content-boundary validation and staged whitespace checks. Runtime tests and browser setup have not run. No corrections or exceptions were required in this reviewed state; a later changed-input review appends another revision.
+
+## Revision 6
+
+Package-QC correction/recheck, 24 October 2026. DOCS-QC-01/02 are resolved: PROJECT limits midline hiding to dynamic mode; R11 scopes zero-distance preservation to interval/follow and R12 explicitly yields to immediate hard-drop locking. Rechecked all four R20 policy combinations, normal/penetrator projection and R13/R18 visibility. Allowed values and behavior are unchanged.
+
+Exact reviewed states: `SPEC.md` = `1ac0f8e1f15564c830b025781565bb0b1b0d3d1c`; `PROJECT.md` = `feb09dbc82b72e060d66d944542f5017ef2a5ff9`; `ARCHITECTURE.md` = `20928494cd7c2006544dcf0631de1d2741ab2643`; `DECOMPOSITION.md` = `338cd050cb7d66481e2b6489e1dde3e54aa515de`.
+
+Checks: semantic conformance to accepted scope, boundary/policy interactions, retained phase/task coverage and source-identity currency. Existing component, count and hierarchy assessments remain applicable: no IDs, parent groups, allowed settings or accepted behaviors were added or removed. All located package findings affecting this gate are resolved; no exception is needed. Application tests were not run because there is no implementation.

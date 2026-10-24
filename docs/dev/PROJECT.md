@@ -19,7 +19,7 @@ The game should remain small, coherent and responsive, with predictable gameplay
 
 Provide hold, a landing ghost, seven-piece bag randomization, wall kicks and hard drop. The default locking policy gives a piece one full gravity interval after grounding, including a hard drop that reaches the ground. Grounded lateral movement and rotation do not restart that interval.
 
-The landing ghost is dynamically hidden when any projected cell lies above the board midline and is shown when the whole projection is in the lower half.
+In dynamic visibility mode, hide the landing ghost when any projected cell lies above the board midline and show it when the whole projection is in the lower half.
 
 ## Penetrator ability
 
