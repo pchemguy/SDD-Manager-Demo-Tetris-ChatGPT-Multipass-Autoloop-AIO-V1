@@ -10,6 +10,8 @@ These are intended source/test homes, not a claim that application files already
 | Clock/input control | src/browser/controller.ts | tests/integration/controller.test.ts |
 | DOM view and styling | src/ui/view.ts, src/styles.css | tests/e2e/classic.spec.ts |
 | Composition/static shell | src/main.ts, index.html | production build and browser entry flow |
+| Landing and kicks | src/core/landing.ts; rotation remains in geometry.ts | tests/unit/landing.test.ts, tests/unit/geometry.test.ts |
+| Hold/ghost presentation | session.ts and ui/view.ts | tests/unit/hold.test.ts, tests/e2e/assistance.spec.ts |
 
 ## Repository and generated assets
 
