@@ -31,7 +31,7 @@ Render activated pieces entirely white, reserve other colors for regular pieces 
 
 Provide native side-panel controls for ghost visibility, hard-drop availability, next-piece preview, hard-drop locking policy, general locking policy and hold availability. Show the next piece when enabled. Visibility and control toggles take effect immediately; locking-policy changes take effect with the next piece. Disabling hold retains its stored piece.
 
-Default to a dynamic ghost, enabled hard drop, next preview and hold, full-gravity-interval locking and hard drop following the general policy. Settings remain available across game restarts in the page and reset to defaults on page reload.
+Default to a dynamic ghost, enabled hard drop, next preview and hold, full-gravity-interval locking and hard drop following the general policy. Settings persist through cookies and can be supplied through URL query parameters. Resolve each setting independently from its valid explicit URL value, otherwise its valid cookie, otherwise its default. Save explicit valid URL values in cookies, including defaults; omitted parameters preserve saved values. User changes save the affected cookie and update its URL parameter. Invalid values fall back independently without preventing play.
 
 ## Platform and constraints
 
