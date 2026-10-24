@@ -49,7 +49,7 @@ Decision evidence: demonstrate the integrated milestone behavior and inspect usa
 
 ### Phase 3 — Landing and hold assistance
 
-Outcome: A playable game with a faithful landing ghost and a once-per-piece hold slot. Scope: R9 hold and the R11 ghost presentation. Release: v0.3.0.
+Outcome: A playable game with a faithful landing ghost and a once-per-piece hold slot. Scope: R9 hold, R11 ghost and R13 dynamic midline visibility. Release: v0.3.0.
 
 Scope rationale: These are optional player aids on the stable movement/landing baseline. Separate model/view checks cover them without expanding the first enhanced movement phase.
 
