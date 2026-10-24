@@ -15,6 +15,8 @@ These are intended source/test homes, not a claim that application files already
 | Penetrator mode and rewards | landing.ts, session.ts and ui/view.ts | tests/unit/penetrator.test.ts, tests/e2e/penetrator.spec.ts |
 | Typed settings and session defaults | src/config/settings.ts | tests/unit/settings.test.ts |
 | Native settings panel and preview | src/ui/settings-panel.ts, ui/view.ts | tests/e2e/settings.spec.ts |
+| Pure setting resolution | src/config/resolve.ts | tests/unit/resolve.test.ts |
+| Browser cookie and URL adapter | src/browser/settings-storage.ts | tests/integration/settings-storage.test.ts, tests/e2e/persistence.spec.ts |
 
 ## Repository and generated assets
 
