@@ -2,9 +2,9 @@
 
 ## Current gate
 
-State: Ready for PLAN authoring. Current scope: cumulative item 5. Owner: sdd-specify.
+State: Ready for PLAN authoring. Current scope: cumulative item 6. Owner: sdd-specify.
 
-Exact reviewed/governing Git blob identities: `SPEC.md` = `15ae7a763bc56b9dc2ba1e551190eb8177069cd0`; `PROJECT.md` = `bb17a9b4427eab0ee8ef36801ca3ce8f8db0f1d9`; `ARCHITECTURE.md` = `0bb2091afa91fb2aff729478a884e2315dec8a42`; `DECOMPOSITION.md` = `8f18006a5312a66f27a640e1931a2299306d3403`.
+Exact reviewed/governing Git blob identities: `SPEC.md` = `79517958465616837a7e78cf46c2c09050186863`; `PROJECT.md` = `27b571b16e6c78316d7feea10a83b677439c4afa`; `ARCHITECTURE.md` = `20928494cd7c2006544dcf0631de1d2741ab2643`; `DECOMPOSITION.md` = `338cd050cb7d66481e2b6489e1dde3e54aa515de`.
 
 No confirmed unresolved findings. This is scoped document conformance evidence, not whole-package QC, runtime testing, browser provisioning or implementation acceptance.
 
@@ -55,5 +55,15 @@ Reviewed 24 October 2026, current cumulative scope 5.
 Reviewed current requirements against purpose/non-goals, ownership, dependency direction, input/error/lifecycle contracts and independently assessable acceptance. Geometry, top-out, simultaneous clears, scoring, deterministic time/randomness, native keyboard ownership and the required browser matrix are covered by R1–R8. C1–C5 own those contracts without a second board or browser dependency in the core. R9–R12 route hold through C3, kick/landing rules through C1 and grounded timing through C3/C4; ghost and hard drop share one projection. R13 defines the straddling boundary by every occupied ghost cell, with visibility independent of landing. R14–R17 separate traversal from strict locking; validate activation/no-landing failure before spending bonuses and preserve hold, score and timer interactions. R18–R20 define typed defaults, live toggles and per-piece policy snapshots, including next/hold preview and control focus. Acceptance tables include success, rejection and boundary outcomes; no critical behavioral choice is left to a task.
 
 Exact source states for this review: `SPEC.md` = `15ae7a763bc56b9dc2ba1e551190eb8177069cd0`; `PROJECT.md` = `bb17a9b4427eab0ee8ef36801ca3ce8f8db0f1d9`; `ARCHITECTURE.md` = `0bb2091afa91fb2aff729478a884e2315dec8a42`; `DECOMPOSITION.md` = `8f18006a5312a66f27a640e1931a2299306d3403`.
+
+Checks performed: owner semantic conformance review, current content-identity capture, generated hierarchy/dependency assertions where applicable, local-link/heading/content-boundary validation and staged whitespace checks. Runtime tests and browser setup have not run. No corrections or exceptions were required in this reviewed state; a later changed-input review appends another revision.
+
+## Revision 5
+
+Reviewed 24 October 2026, current cumulative scope 6.
+
+Reviewed current requirements against purpose/non-goals, ownership, dependency direction, input/error/lifecycle contracts and independently assessable acceptance. Geometry, top-out, simultaneous clears, scoring, deterministic time/randomness, native keyboard ownership and the required browser matrix are covered by R1–R8. C1–C5 own those contracts without a second board or browser dependency in the core. R9–R12 route hold through C3, kick/landing rules through C1 and grounded timing through C3/C4; ghost and hard drop share one projection. R13 defines the straddling boundary by every occupied ghost cell, with visibility independent of landing. R14–R17 separate traversal from strict locking; validate activation/no-landing failure before spending bonuses and preserve hold, score and timer interactions. R18–R20 define typed defaults, live toggles and per-piece policy snapshots, including next/hold preview and control focus. R21–R24 resolve each key independently and cover explicit defaults, omission, duplicates, malformed values and nonfatal adapter failures. Acceptance tables include success, rejection and boundary outcomes; no critical behavioral choice is left to a task.
+
+Exact source states for this review: `SPEC.md` = `79517958465616837a7e78cf46c2c09050186863`; `PROJECT.md` = `27b571b16e6c78316d7feea10a83b677439c4afa`; `ARCHITECTURE.md` = `20928494cd7c2006544dcf0631de1d2741ab2643`; `DECOMPOSITION.md` = `338cd050cb7d66481e2b6489e1dde3e54aa515de`.
 
 Checks performed: owner semantic conformance review, current content-identity capture, generated hierarchy/dependency assertions where applicable, local-link/heading/content-boundary validation and staged whitespace checks. Runtime tests and browser setup have not run. No corrections or exceptions were required in this reviewed state; a later changed-input review appends another revision.
