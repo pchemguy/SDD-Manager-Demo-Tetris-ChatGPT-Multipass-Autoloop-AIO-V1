@@ -110,4 +110,51 @@ The hierarchy derives from [PLAN](PLAN.md), contracts from [SPEC](SPEC.md) and e
         - [ ] T-029 — Review, test and report phase 3
             Depends on: every delivery milestone in Phase 3 being complete and closed; tasks T-025, T-028.
             Evidence: review cross-milestone code, verify phase exits and prior behavior, fix blockers and commit docs/dev/reports/phases/3/PHASE-REPORT.md with findings/TODOs and acceptance evidence for subsequent phase closure/integration/release.
+
+## Phase 4 — Penetrator ability
+
+- [ ] Phase 4 — Penetrator ability
+    - [ ] Milestone 4.1 — Penetrator traversal
+        - [ ] T-030 — Implement the lowest valid penetrator landing query
+            Scope: src/core/landing.ts and tests/unit/penetrator.test.ts. Depends on: T-029. Contracts: R14.
+            Evidence: Use independent stacks/cavities to verify the deepest free fit below obstructions and normal-versus-penetrator projection behavior.
+        - [ ] T-031 — Implement penetrator movement candidate validation
+            Scope: src/core/geometry.ts, src/core/session.ts and tests/unit/penetrator.test.ts. Depends on: T-030. Contracts: R14.
+            Evidence: Verify transient overlap is permitted inside bounds only while a legal landing remains at or below; reject movement/rotation with no eventual fit.
+        - [ ] T-032 — Integrate penetrator descent and strict locking
+            Scope: src/core/session.ts and tests/unit/locking.test.ts. Depends on: T-031. Contracts: R14, R16.
+            Evidence: Verify row-by-row traversal through overlap, ground detection at the lowest legal fit and atomic lock without overwriting settled cells.
+        - [ ] T-033 — Review, test and report milestone 4.1
+            Depends on: T-030, T-031, T-032. Scope: whole milestone implementation and collaborating boundaries.
+            Evidence: separate code review and required focused/regression/browser checks; repair blockers; document findings and a TODO section in docs/dev/reports/phases/4/4.1.md.
+    - [ ] Milestone 4.2 — Activation and rewards
+        - [ ] T-034 — Implement activation and per-piece lifetime
+            Scope: src/core/session.ts and tests/unit/penetrator.test.ts. Depends on: T-033. Contracts: R15–R16.
+            Evidence: Verify one bonus is spent only for a successful activation, repeat/no-bonus actions are no-ops, hold is blocked and activation ends at lock.
+        - [ ] T-035 — Implement four-line bonus rewards and restart
+            Scope: src/core/session.ts and tests/unit/scoring.test.ts. Depends on: T-034. Contracts: R15.
+            Evidence: Verify exactly-four-line rewards, cap three, earning after a spend, ordinary score preservation and zero bonuses after restart.
+        - [ ] T-036 — Connect the activation hotkey and landing assistance
+            Scope: src/browser/controller.ts, src/core/session.ts and tests/integration/controller.test.ts. Depends on: T-035. Contracts: R6, R14–R16.
+            Evidence: Verify P ignores repeats, ghost/drop share the penetrator result and activation preserves a grounded deadline or cancels it when airborne.
+        - [ ] T-037 — Review, test and report milestone 4.2
+            Depends on: T-034, T-035, T-036. Scope: whole milestone implementation and collaborating boundaries.
+            Evidence: separate code review and required focused/regression/browser checks; repair blockers; document findings and a TODO section in docs/dev/reports/phases/4/4.2.md.
+    - [ ] Milestone 4.3 — Penetrator presentation
+        - [ ] T-038 — Render activated pieces and ghosts in white
+            Scope: src/ui/view.ts, src/styles.css and focused rendering tests. Depends on: T-037. Contracts: R17.
+            Evidence: Verify active penetrator cells are white, normal piece/ghost colors are nonwhite and rendering overlay does not erase settled data.
+        - [ ] T-039 — Render the live bonus counter
+            Scope: src/ui/view.ts and tests/e2e/penetrator.spec.ts. Depends on: T-038. Contracts: R15, R17.
+            Evidence: Verify one symbol per bonus at 0–3, accessible count text and immediate updates on earning, spending and restart.
+        - [ ] T-040 — Verify and document the full penetrator flow
+            Scope: tests/e2e/penetrator.spec.ts, README.md and docs/user/controls.md. Depends on: T-039. Contracts: R9, R11–R17.
+            Evidence: Run both engines through earned activation, through-stack hard drop, hidden/visible ghost, hold rejection, deadline lock and restart; preserve normal gameplay regressions.
+        - [ ] T-041 — Review, test and report milestone 4.3
+            Depends on: T-038, T-039, T-040. Scope: whole milestone implementation and collaborating boundaries.
+            Evidence: separate code review and required focused/regression/browser checks; repair blockers; document findings and a TODO section in docs/dev/reports/phases/4/4.3.md.
+    - [ ] Milestone 4.4 — Phase review
+        - [ ] T-042 — Review, test and report phase 4
+            Depends on: every delivery milestone in Phase 4 being complete and closed; tasks T-033, T-037, T-041.
+            Evidence: review cross-milestone code, verify phase exits and prior behavior, fix blockers and commit docs/dev/reports/phases/4/PHASE-REPORT.md with findings/TODOs and acceptance evidence for subsequent phase closure/integration/release.
             Include docs/dev/reports/IMPLEMENTATION-REPORT.md with full task-list result and aggregated unresolved/deferred TODOs, options and provenance.
