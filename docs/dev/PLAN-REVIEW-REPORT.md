@@ -2,9 +2,9 @@
 
 ## Current gate
 
-State: Ready for layout authoring only; TASKS is held until combined layout review. Current scope: cumulative item 5. Owner: sdd-plan.
+State: Ready for TASKS derivation. Current scope: cumulative item 5. Owner: sdd-plan.
 
-Exact reviewed/governing Git blob identities: `PLAN.md` = `6fcb34426c14a83a238a94f6d79d99f58824af6d`; `PROJECT.md` = `bb17a9b4427eab0ee8ef36801ca3ce8f8db0f1d9`; `ARCHITECTURE.md` = `0bb2091afa91fb2aff729478a884e2315dec8a42`; `DECOMPOSITION.md` = `8f18006a5312a66f27a640e1931a2299306d3403`; `SPEC.md` = `15ae7a763bc56b9dc2ba1e551190eb8177069cd0`; `SPEC-REVIEW-REPORT.md` = `5464d23bf423970a711e77faaae3baa5f704bec1`.
+Exact reviewed/governing Git blob identities: `PLAN.md` = `6fcb34426c14a83a238a94f6d79d99f58824af6d`; `layout.md` = `c94de676ba0913138f8f9b0ea55cc44bb889ea43`; `PROJECT.md` = `bb17a9b4427eab0ee8ef36801ca3ce8f8db0f1d9`; `ARCHITECTURE.md` = `0bb2091afa91fb2aff729478a884e2315dec8a42`; `DECOMPOSITION.md` = `8f18006a5312a66f27a640e1931a2299306d3403`; `SPEC.md` = `15ae7a763bc56b9dc2ba1e551190eb8177069cd0`; `SPEC-REVIEW-REPORT.md` = `5464d23bf423970a711e77faaae3baa5f704bec1`.
 
 No confirmed unresolved findings. This is scoped document conformance evidence, not whole-package QC, runtime testing, browser provisioning or implementation acceptance.
 
@@ -141,6 +141,24 @@ Reviewed 24 October 2026, current cumulative scope 5.
 Reviewed integrated capability scope before numerical shape: Phase 1 contains the minimum complete classic game; subsequent phases add a bounded named capability on its verified predecessor. Every included SPEC contract has an outcome and an exit route. Each delivery milestone ends with a separate code-review/testing/report task; phase review has exactly one task and depends on all delivery milestone closures. Version scope does not collapse delivery into one phase. This assessment covers strategy; the retained or absent layout is not certified for the changed scope until the combined review.
 
 Exact source states for this review: `PLAN.md` = `6fcb34426c14a83a238a94f6d79d99f58824af6d`; `PROJECT.md` = `bb17a9b4427eab0ee8ef36801ca3ce8f8db0f1d9`; `ARCHITECTURE.md` = `0bb2091afa91fb2aff729478a884e2315dec8a42`; `DECOMPOSITION.md` = `8f18006a5312a66f27a640e1931a2299306d3403`; `SPEC.md` = `15ae7a763bc56b9dc2ba1e551190eb8177069cd0`; `SPEC-REVIEW-REPORT.md` = `5464d23bf423970a711e77faaae3baa5f704bec1`.
+
+| Group | Delivery count | Excluded reviews | Scope/count assessment |
+| --- | --- | --- | --- |
+| Phase 1 | 3 | One final phase-review milestone | Three integrated steps establish foundations, real play and completed session behavior. |
+| Phase 2 | 2 | One final phase-review milestone | Two cohesive delivery milestones are retained: they expose distinct integrated outcomes inside a narrow phase; splitting into quota-driven groups would add review overhead without independent value. |
+| Phase 3 | 2 | One final phase-review milestone | Two cohesive delivery milestones are retained: they expose distinct integrated outcomes inside a narrow phase; splitting into quota-driven groups would add review overhead without independent value. |
+| Phase 4 | 3 | One final phase-review milestone | Three integrated steps establish foundations, real play and completed session behavior. |
+| Phase 5 | 2 | One final phase-review milestone | Two cohesive delivery milestones are retained: they expose distinct integrated outcomes inside a narrow phase; splitting into quota-driven groups would add review overhead without independent value. |
+
+Checks performed: owner semantic conformance review, current content-identity capture, generated hierarchy/dependency assertions where applicable, local-link/heading/content-boundary validation and staged whitespace checks. Runtime tests and browser setup have not run. No corrections or exceptions were required in this reviewed state; a later changed-input review appends another revision.
+
+## Revision 9
+
+Reviewed 24 October 2026, current cumulative scope 5 with layout.
+
+Reviewed integrated capability scope before numerical shape: Phase 1 contains the minimum complete classic game; subsequent phases add a bounded named capability on its verified predecessor. Every included SPEC contract has an outcome and an exit route. Each delivery milestone ends with a separate code-review/testing/report task; phase review has exactly one task and depends on all delivery milestone closures. Version scope does not collapse delivery into one phase. Physical allocation maps every component and cross-cutting test/report/artifact owner without cycles; intended source paths are distinguished from existing files.
+
+Exact source states for this review: `PLAN.md` = `6fcb34426c14a83a238a94f6d79d99f58824af6d`; `layout.md` = `c94de676ba0913138f8f9b0ea55cc44bb889ea43`; `PROJECT.md` = `bb17a9b4427eab0ee8ef36801ca3ce8f8db0f1d9`; `ARCHITECTURE.md` = `0bb2091afa91fb2aff729478a884e2315dec8a42`; `DECOMPOSITION.md` = `8f18006a5312a66f27a640e1931a2299306d3403`; `SPEC.md` = `15ae7a763bc56b9dc2ba1e551190eb8177069cd0`; `SPEC-REVIEW-REPORT.md` = `5464d23bf423970a711e77faaae3baa5f704bec1`.
 
 | Group | Delivery count | Excluded reviews | Scope/count assessment |
 | --- | --- | --- | --- |
