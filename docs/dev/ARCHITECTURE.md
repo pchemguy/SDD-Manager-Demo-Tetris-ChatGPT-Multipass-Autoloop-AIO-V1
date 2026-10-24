@@ -31,3 +31,7 @@ Core fixtures establish geometry, wall/floor collisions, rotation, line clearing
 The core owns a single landing projector used by hard drop and the ghost; independent renderer calculations are prohibited. The randomizer owns bag state. Rotation owns deterministic kick candidates. Session state owns the hold slot and once-per-piece hold eligibility. The view receives projected geometry and hold presentation data without consuming the queue.
 
 Ground-contact state and its deadline belong to the core, using supplied timestamps rather than browser timers. The controller supplies wakeups and inputs; the model settles due events before accepting same-time actions. This prevents timing policy from diverging between keyboard, gravity and hard drop.
+
+## Penetrator movement
+
+The shared landing component selects the lowest valid fit beneath a candidate pose. Its normal and penetrator policies share board geometry but differ in traversal constraints. The session alone owns activation and bonus accounting; movement and projection read the active mode. Temporary overlap is representation state, never a board write. Lock uses the same strict non-overlap validator in both modes, keeping the board invariant independent of traversal.
