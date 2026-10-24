@@ -43,3 +43,9 @@ Follow `sdd-manage`'s preparation and phase-activation workflows for required tr
 ## Project guidance
 
 Maintain project-specific navigation and validated setup/check commands here as they become established. Do not invent commands, paths, requirements or completion claims.
+
+## Maintained project navigation
+
+The TypeScript browser game is defined by [PROJECT](docs/dev/PROJECT.md), [ARCHITECTURE](docs/dev/ARCHITECTURE.md), [DECOMPOSITION](docs/dev/DECOMPOSITION.md), [SPEC](docs/dev/SPEC.md), [PLAN](docs/dev/PLAN.md), [layout](docs/dev/layout.md) and the implementation [TASKS](docs/dev/TASKS.md). The current preparation tasks and decisions are in [DOCS_TASKS](docs/dev/DOCS_TASKS.md) and [DOCS_PREPARATION](docs/dev/DOCS_PREPARATION.md); recover subsequent work through HANDOFF and Git.
+
+Application source, dependencies and runtime commands are planned, not implemented or validated. Follow the central browser policy during actual provisioning and verification. Read applicable nested instructions before editing a selected path.
