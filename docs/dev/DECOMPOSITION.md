@@ -9,6 +9,7 @@
 | C3 Session | Own gameplay state, activation flag, bonus count, hold eligibility and per-piece lock state. | Activation spends a bonus only when a legal eventual landing exists; mode lasts until lock; traversal reads C1. | Intermediate-overlap, legal-lock, rejected-activation, cap/reward and restart checks. |
 | C4 Clock/input controller | Own event subscriptions, monotonic scheduling, keyboard intent and hidden-page suspension. | Maps native events to session actions, then sends snapshots to the view. | Fake-clock action ordering plus real native browser input. |
 | C5 DOM view | Own fixed cell grid, score/status/help and restart UI. | Snapshot + view options → DOM update; user intent → controller callback. | Render fixtures and browser assertions; never infer locked cells from CSS. |
+| C6 Settings | Own typed defaults, current settings and validated change events independently of game restart. | Controller consults toggles; spawn captures locking policies; native view controls receive values and callbacks. | Toggle timing, stored-hold retention and next-preview nonconsumption. |
 
 ## Collaboration and ownership
 
@@ -19,3 +20,5 @@ Initialization and restart reset the model and clock together. Failed collision-
 C1 projects from the current pose without changing state or randomness. C3 commits the projected pose for hard drop and exposes that same projection to C5 for the ghost. Grounded state/deadline belongs to C3; C4 owns no competing lock timeout. Hold transfers shape identity, not a pose or deadline.
 
 C1 evaluates strict final fits even when penetrator traversal allows temporary overlap. C3 validates the activation candidate before spending a bonus. Lock never overwrites an occupied cell; clearing and reward accounting occur after a valid lock and before the next spawn. C5 layers the white active geometry over settled cells without altering their stored identities.
+
+C6 survives C3 restart. Feature availability is consulted at action time; locking fields are copied at spawn. C5 owns settings/preview/hold/bonus DOM nodes, but their values come only from snapshots and C6. Key handling ignores native interactive controls.
