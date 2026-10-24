@@ -27,6 +27,12 @@ Four-line clears award penetrator bonuses, with at most three stored. A hotkey s
 
 Render activated pieces entirely white, reserve other colors for regular pieces and show one side-panel symbol for each available bonus. Restart clears bonuses.
 
+## Player configuration
+
+Provide native side-panel controls for ghost visibility, hard-drop availability, next-piece preview, hard-drop locking policy, general locking policy and hold availability. Show the next piece when enabled. Visibility and control toggles take effect immediately; locking-policy changes take effect with the next piece. Disabling hold retains its stored piece.
+
+Default to a dynamic ghost, enabled hard drop, next preview and hold, full-gravity-interval locking and hard drop following the general policy. Settings remain available across game restarts in the page and reset to defaults on page reload.
+
 ## Platform and constraints
 
 Implement the game in TypeScript using a DOM/CSS board and native browser controls. Deliver it as a static browser application without a backend, account or external service requirement. Keep gameplay logic independently testable from rendering and input handling.
