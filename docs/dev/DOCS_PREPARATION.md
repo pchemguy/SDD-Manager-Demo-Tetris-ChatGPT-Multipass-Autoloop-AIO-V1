@@ -4,11 +4,11 @@
 
 - Mode: autodoc/autoloop, explicitly requested by the user on 24 October 2026.
 - Current scope: pass 1, playable classic baseline; ordered scope sequence below.
-- Approval basis: the first PROJECT approval remains active. Later PROJECT approvals are waived; ARCHITECTURE through TASKS checkpoints are preapproved in every pass. This policy was announced before the first brief. The user's “Yes” confirmed the proposed gameplay interactions and TypeScript/DOM direction; it did not approve an unseen PROJECT.
+- Approval basis: the first PROJECT approval was received on 24 October 2026 for proposal commit `30e2e9c0c195874d8eae2a184eb75d5470927806` (PROJECT blob `7a04386debc8ac2b4d9f14ac563f70139c4606c9`). Later PROJECT approvals are waived; ARCHITECTURE through TASKS checkpoints are preapproved in every pass. This policy was announced before the first brief. The user's “Yes” confirmed the proposed gameplay interactions and TypeScript/DOM direction; it did not approve an unseen PROJECT.
 - Decision delegation: after the first PROJECT approval, resolve new material decisions within the predefined scopes using agent judgment, with visible rationale and durable owning-document decisions.
 - Tracking: enabled for documentation and implementation by root AGENTS.md. Native milestone 1, `sdd-docs-main`, and issues 1–9 correspond to DOCS-001–009; exact standard content and associations were read back before repository modifications.
 - Publication: push and verify each owned commit before advancing. Reporting: Standard after Explicit entry reporting.
-- Next boundary: await first human approval of the published pass-1 PROJECT proposal; dependent ARCHITECTURE is held.
+- Next boundary: complete DOCS-002 publication/issue closure, then author ARCHITECTURE under autodoc preapproval.
 - Final authorized stop: after pass 6 DOCS-008 publication and issue closure, before DOCS-009, whole-package QC, documentation integration and implementation. Keep DOCS-009 and the documentation milestone open.
 
 ## Scope sequence
@@ -41,7 +41,7 @@ The user confirmed the following proposals with “Yes” on 24 October 2026. Th
 | Task | Current evidence / decision basis |
 | --- | --- |
 | DOCS-001 | All four root records existed at baseline `19e560c7b3fb680c2589902ba8c3466f795249d4`; retained byte for byte. DOCS_TASKS is instantiated from the running package with only DOCS-001 checked. This record and HANDOFF are established in the same initialization commit. |
-| DOCS-002 | Pass 1 PROJECT proposed, Git blob `7a04386debc8ac2b4d9f14ac563f70139c4606c9`; first human approval pending. Owner review checked purpose, minimal scope, accepted TypeScript/DOM direction, policy links and absence of preparation-process narrative. No material gaps; exact gameplay contracts remain with SPEC. DOCS-002 stays unchecked. |
+| DOCS-002 | Pass 1 PROJECT proposed, Git blob `7a04386debc8ac2b4d9f14ac563f70139c4606c9`; human approval received: “Approve” on 24 October 2026 for published proposal `30e2e9c0c195874d8eae2a184eb75d5470927806`. Owner review checked purpose, minimal scope, accepted TypeScript/DOM direction, policy links and absence of preparation-process narrative. No material gaps; exact gameplay contracts remain with SPEC. DOCS-002 is checked with this accepted state. |
 | DOCS-003 | Pass 1 ARCHITECTURE not authored; checkpoint preapproved after accepted PROJECT. |
 | DOCS-004 | Pass 1 DECOMPOSITION not authored; checkpoint preapproved. |
 | DOCS-005 | Pass 1 SPEC and required QC pending; checkpoint preapproved. |
@@ -63,4 +63,4 @@ Material unresolved decisions: none blocking the initial brief. Exact gameplay c
 
 ## Pending transitions
 
-Initialization `718941484249494434048bcbd4df3cf9be19e484` is published with exact remote readback; issue 1 is closed as completed with evidence/readback. Publish/read back this PROJECT proposal, then await its first human approval. DOCS-002 and issue 2 remain open; dependent ARCHITECTURE is held.
+Initialization `718941484249494434048bcbd4df3cf9be19e484` is published with exact remote readback; issue 1 is closed as completed with evidence/readback. Publish/read back this approval checkpoint, then close/read back issue 2. Continue ARCHITECTURE through TASKS and the predefined resets; stop after final pass DOCS-008.
