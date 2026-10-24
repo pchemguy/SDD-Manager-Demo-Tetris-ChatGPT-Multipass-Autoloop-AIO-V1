@@ -8,7 +8,7 @@
 - Decision delegation: after the first PROJECT approval, resolve new material decisions within the predefined scopes using agent judgment, with visible rationale and durable owning-document decisions.
 - Tracking: enabled for documentation and implementation by root AGENTS.md. Native milestone 1, `sdd-docs-main`, and issues 1–9 correspond to DOCS-001–009; exact standard content and associations were read back before repository modifications.
 - Publication: push and verify each owned commit before advancing. Reporting: Standard after Explicit entry reporting.
-- Next boundary: publish initialization and close/read back DOCS-001; then publish the pass-1 PROJECT proposal and pause for its first human approval.
+- Next boundary: await first human approval of the published pass-1 PROJECT proposal; dependent ARCHITECTURE is held.
 - Final authorized stop: after pass 6 DOCS-008 publication and issue closure, before DOCS-009, whole-package QC, documentation integration and implementation. Keep DOCS-009 and the documentation milestone open.
 
 ## Scope sequence
@@ -41,7 +41,7 @@ The user confirmed the following proposals with “Yes” on 24 October 2026. Th
 | Task | Current evidence / decision basis |
 | --- | --- |
 | DOCS-001 | All four root records existed at baseline `19e560c7b3fb680c2589902ba8c3466f795249d4`; retained byte for byte. DOCS_TASKS is instantiated from the running package with only DOCS-001 checked. This record and HANDOFF are established in the same initialization commit. |
-| DOCS-002 | Pass 1 PROJECT proposal pending; no human approval yet. |
+| DOCS-002 | Pass 1 PROJECT proposed, Git blob `7a04386debc8ac2b4d9f14ac563f70139c4606c9`; first human approval pending. Owner review checked purpose, minimal scope, accepted TypeScript/DOM direction, policy links and absence of preparation-process narrative. No material gaps; exact gameplay contracts remain with SPEC. DOCS-002 stays unchecked. |
 | DOCS-003 | Pass 1 ARCHITECTURE not authored; checkpoint preapproved after accepted PROJECT. |
 | DOCS-004 | Pass 1 DECOMPOSITION not authored; checkpoint preapproved. |
 | DOCS-005 | Pass 1 SPEC and required QC pending; checkpoint preapproved. |
@@ -63,4 +63,4 @@ Material unresolved decisions: none blocking the initial brief. Exact gameplay c
 
 ## Pending transitions
 
-Initialization commit publication and DOCS-001 issue closure require readback after this checkpoint. After those effects are verified, proceed only to the pass-1 PROJECT proposal and its first approval checkpoint. Reconcile actual Git/provider state before retrying an uncertain operation.
+Initialization `718941484249494434048bcbd4df3cf9be19e484` is published with exact remote readback; issue 1 is closed as completed with evidence/readback. Publish/read back this PROJECT proposal, then await its first human approval. DOCS-002 and issue 2 remain open; dependent ARCHITECTURE is held.
