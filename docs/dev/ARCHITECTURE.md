@@ -40,4 +40,6 @@ The shared landing component selects the lowest valid fit beneath a candidate po
 
 A typed settings value is owned by the controller's session configuration service. Rendering reads visibility settings; action dispatch reads feature toggles. The session copies locking policies into each spawned piece, so changes cannot silently alter a pending deadline. Native settings controls emit typed changes and do not dispatch gameplay keys. The queue exposes a read-only preview; preview rendering cannot draw a new piece.
 
-Settings live in page memory, independently of the game state. Restart retains them; a page reload creates defaults. No cookie, query or storage adapter participates in initialization.
+## Persistence adapters
+
+The settings resolver is pure: decode each known URL value and cookie independently, then apply precedence and defaults. Browser adapters own cookie access and History API updates; they never import game rules. Bootstrap resolves settings before the first piece spawns and saves valid explicit URL values. A setting-change transaction updates the in-memory value and attempts only its cookie and URL parameter. Browser persistence failures are nonfatal and remain separate from gameplay errors.
