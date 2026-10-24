@@ -3,12 +3,12 @@
 ## Current control
 
 - Mode: autodoc/autoloop, explicitly requested by the user on 24 October 2026.
-- Current scope: pass 5, cumulative scope through item 5 of the ordered scope sequence.
+- Current scope: pass 6, cumulative scope through item 6 of the ordered scope sequence.
 - Approval basis: the first PROJECT approval was received on 24 October 2026 for proposal commit `30e2e9c0c195874d8eae2a184eb75d5470927806` (PROJECT blob `7a04386debc8ac2b4d9f14ac563f70139c4606c9`). Later PROJECT approvals are waived; ARCHITECTURE through TASKS checkpoints are preapproved in every pass. This policy was announced before the first brief. The user's “Yes” confirmed the proposed gameplay interactions and TypeScript/DOM direction; it did not approve an unseen PROJECT.
 - Decision delegation: after the first PROJECT approval, resolve new material decisions within the predefined scopes using agent judgment, with visible rationale and durable owning-document decisions.
 - Tracking: enabled for documentation and implementation by root AGENTS.md. Native milestone 1, `sdd-docs-main`, and issues 1–9 correspond to DOCS-001–009; exact standard content and associations were read back before repository modifications.
 - Publication: push and verify each owned commit before advancing. Reporting: Standard after Explicit entry reporting.
-- Next boundary: publish/close DOCS-008, then reset for the next predefined scope.
+- Next boundary: verify reset publication and reopen/read back existing issues 2–9, then revise retained PROJECT for scope 6.
 - Final authorized stop: after pass 6 DOCS-008 publication and issue closure, before DOCS-009, whole-package QC, documentation integration and implementation. Keep DOCS-009 and the documentation milestone open.
 
 ## Scope sequence
@@ -41,13 +41,13 @@ The user confirmed the following proposals with “Yes” on 24 October 2026. Th
 | Task | Current evidence / decision basis |
 | --- | --- |
 | DOCS-001 | All four root records existed at baseline `19e560c7b3fb680c2589902ba8c3466f795249d4`; retained byte for byte. DOCS_TASKS is instantiated from the running package with only DOCS-001 checked. This record and HANDOFF are established in the same initialization commit. |
-| DOCS-002 | Scope 5: `PROJECT.md` blob `bb17a9b4427eab0ee8ef36801ca3ce8f8db0f1d9`; accepted under autodoc/autoloop checkpoint preapproval, owner sdd-design. Owner consistency/content review passed. |
-| DOCS-003 | Scope 5: `ARCHITECTURE.md` blob `0bb2091afa91fb2aff729478a884e2315dec8a42`; accepted under autodoc/autoloop checkpoint preapproval, owner sdd-design. Owner consistency/content review passed. |
-| DOCS-004 | Scope 5: `DECOMPOSITION.md` blob `8f18006a5312a66f27a640e1931a2299306d3403`; accepted under autodoc/autoloop checkpoint preapproval, owner sdd-design. Owner consistency/content review passed. |
-| DOCS-005 | Scope 5: `SPEC.md` blob `15ae7a763bc56b9dc2ba1e551190eb8177069cd0`; accepted under autodoc/autoloop checkpoint preapproval, owner sdd-specify. QC: `SPEC-REVIEW-REPORT.md` (blob `5464d23bf423970a711e77faaae3baa5f704bec1`). |
-| DOCS-006 | Scope 5: `PLAN.md` blob `6fcb34426c14a83a238a94f6d79d99f58824af6d`; accepted under autodoc/autoloop checkpoint preapproval, owner sdd-plan. QC: `PLAN-REVIEW-REPORT.md` (blob `993d74a0d8b59437d3ba78583b93ae21a6bc5cf5`). |
-| DOCS-007 | Scope 5: `layout.md` blob `c94de676ba0913138f8f9b0ea55cc44bb889ea43`; accepted under autodoc/autoloop checkpoint preapproval, owner sdd-plan. QC: `PLAN-REVIEW-REPORT.md` (blob `7297ecbf29e163b7ef34560efdd0b8d61991a318`). |
-| DOCS-008 | Scope 5: `TASKS.md` blob `213dfa878617a6e5e361a18c44267366036558ba`; accepted under autodoc/autoloop checkpoint preapproval, owner sdd-tasks. QC: `TASKS-REVIEW-REPORT.md` (blob `a45bcac2f3c4ce6552eabe51be56750a40e4bed8`). |
+| DOCS-002 | Scope 6 pending current-scope review/preapproval; retained previous content is input, not current approval. |
+| DOCS-003 | Scope 6 pending current-scope review/preapproval; retained previous content is input, not current approval. |
+| DOCS-004 | Scope 6 pending current-scope review/preapproval; retained previous content is input, not current approval. |
+| DOCS-005 | Scope 6 pending current-scope review/preapproval; retained previous content is input, not current approval. |
+| DOCS-006 | Scope 6 pending current-scope review/preapproval; retained previous content is input, not current approval. |
+| DOCS-007 | Scope 6 pending current-scope review/preapproval; retained previous content is input, not current approval. |
+| DOCS-008 | Scope 6 pending current-scope review/preapproval; retained previous content is input, not current approval. |
 | DOCS-009 | Unchecked and unselected; remains outside the authorized autoloop boundary. |
 
 Material unresolved decisions: none blocking the initial brief. Exact gameplay contracts belong to SPEC; architecture, delivery and task details remain with their respective owners.
@@ -58,9 +58,9 @@ Material unresolved decisions: none blocking the initial brief. Exact gameplay c
 - Copied root files: none. All four destinations are ordinary files. Byte comparison against the initial committed tree passed for every retained file.
 - Initialization continuation: all four initially existed; no mixed-presence continuation pause applies.
 - Package: repository-vendored SDD Manager 0.15.2; discovery completed. Linux host, Git, Node 24.19.0 and Python 3.12.14 are available. Root Windows shell policy is inapplicable to this execution host. Browser-independent documentation needs no browser provisioning; BROWSER_DEV_POLICY governs subsequent browser design/setup/verification.
-- Current reset: prior scope 4 completed through DOCS-008 at `16c8c52a470420ec30797651b750f6e219745cc2`; advance to predefined cumulative scope 5. Authorized by first PROJECT approval and requested autoloop; retain all document bytes as revision inputs and reset only checkboxes/control.
+- Current reset: prior scope 5 completed through DOCS-008 at `0b51208a461fd92f13fd0c5129720a2fbb8e291f`; advance to predefined cumulative scope 6. Authorized by first PROJECT approval and requested autoloop; retain all document bytes as revision inputs and reset only checkboxes/control.
 - Prior-pass evidence: none.
 
 ## Pending transitions
 
-The current scope-5 DOCS-008 checkpoint awaits publication and exact issue-8 closure readback at the time of this record. Earlier required checkpoint effects were verified before this document was authored; Git and issue evidence identify those commits. Reconcile actual later effects before replay. After closure, reset only for the next predefined scope.
+Scope-6 reset publication and reopening/readback of the same issues 2–9 are pending. Do not resume document work until verified. Documentation milestone 1 and issue 9 must remain open.
