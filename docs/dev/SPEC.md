@@ -20,7 +20,7 @@ Clockwise rotation transforms offsets around (1,1) for J/L/S/T/Z and (1.5,1.5) f
 
 **R2 — Session lifecycle.** Initial load and restart create an empty board, score zero and a fresh shape sequence, then spawn one piece. A rejected normal spawn enters game over; it does not overwrite occupied cells. Game over ignores gameplay actions and preserves the last board/score. Restart is available through R and a labeled native button and begins a clean session without reloading or duplicating subscriptions.
 
-**R3 — Baseline movement and locking.** Left/right translate one column; soft drop attempts one row; clockwise rotation follows R10. A failed lateral/rotation action is a no-op. Gravity attempts one row every 1000 ms of visible running game time. A failed downward attempt follows R12. Hard/soft-drop distance awards no score. The controller performs due events before a player action at the same timestamp; spawning schedules the next gravity event one full interval later.
+**R3 — Baseline movement and locking.** Left/right translate one column; soft drop attempts one row; clockwise rotation follows R10. A failed lateral/rotation action is a no-op. Gravity attempts one row every 1000 ms of visible running game time. A failed downward attempt follows the piece's captured general policy (R20); interval locking uses R12. Hard/soft-drop distance awards no score. The controller performs due events before a player action at the same timestamp; spawning schedules the next gravity event one full interval later.
 
 **R4 — Atomic lock and score.** Lock writes exactly four previously free cells, removes all completely occupied rows simultaneously and compacts rows downward with empty rows inserted at the top. A single lock clears zero to four rows; award 0, 100, 300, 500 or 800 points respectively. Score accumulates until restart. Only after clearing/scoring does the next piece spawn. The view cannot observe a partially locked or partially cleared board. No levels or gravity-speed progression are required.
 
@@ -78,7 +78,7 @@ During gravity/soft drop, move one row at a time through admissible intermediate
 
 **R15 — Activation and bonus accounting.** Initialize with zero bonuses. After a valid lock clears exactly four lines, add one bonus up to a maximum of three; keep ordinary scoring unchanged. No other clear count earns a bonus. On P, if running, not already activated, bonus count ≥ 1 and the activated pose is admissible under R14, spend exactly one and mark this piece as a penetrator. Rejected activation, key repeat and activation at game over change nothing. One activation lasts through this piece's movement until lock; the next piece is regular. An activated penetrator cannot be held; C is a no-op without changing the slot, queue, bonus count or deadline. Restart clears all bonuses and activation state.
 
-**R16 — Activation, timing and locking.** On activation, recompute grounded status under R14. If airborne, cancel the prior grounded deadline. If still grounded, preserve its existing deadline rather than granting extra time; a new grounding uses R12. Positive-distance penetrator hard drop starts full grounding delay under the same timing rules as normal pieces; a zero-distance drop preserves the deadline. Grounded expiry locks once using strict bounds/non-overlap validation. Lock may never overwrite settled cells, including after overlapping traversal. Clearing, score, bonus reward and next spawn are one atomic transaction.
+**R16 — Activation, timing and locking.** On activation, recompute grounded status under R14. If airborne, cancel the prior grounded deadline. If still grounded, preserve its existing deadline rather than granting extra time; a new grounding uses R12. Penetrator hard drop follows the piece's captured R20 policies. In the interval/follow case, a positive-distance drop starts full grounding delay and a zero-distance drop preserves the deadline. Grounded expiry locks once using strict bounds/non-overlap validation. Lock may never overwrite settled cells, including after overlapping traversal. Clearing, score, bonus reward and next spawn are one atomic transaction.
 
 **R17 — Visual identity.** Render every activated piece cell with white fill (#ffffff) on a contrasting board; use a white outline for its ghost when visible. Regular pieces and their ghosts use nonwhite shape colors. Settled cells retain their shape identity and regular color when the activation ends at lock. Show a labeled side-panel bonus counter with exactly one lightning-bolt symbol per stored bonus, plus an accessible numeric count including zero. Update it on earn, spend and restart in the same rendered snapshot. An active white overlay may obscure an underlying cell temporarily but cannot delete its model data.
 
@@ -89,3 +89,30 @@ During gravity/soft drop, move one row at a time through admissible intermediate
 | R15 | Exercise zero/one/three bonus counts, successful spend, repeated activation, non-four clears, capped four-line rewards, hold rejection, game over and restart. |
 | R16 | Activate a grounded piece with a lower landing: the old deadline is canceled. Activate one still grounded: its deadline is preserved. Ghost visibility and hard drop agree under both timing cases. |
 | R17 | Inspect active/ghost/settled colors and exact symbol/count updates in both target engines, including immediately after bonus earn/spend. |
+
+## Session settings
+
+**R18 — Controls, values and defaults.** A side panel exposes six native labeled controls. Display their selected values and a short explanation that locking changes apply to the next piece. The ghost modes control visibility only; all use the same canonical projection, including penetrators. Always-show displays a projection whenever an active piece exists; no ghost is rendered at game over.
+
+| Setting | Allowed values | Default |
+| --- | --- | --- |
+| Ghost visibility | hide, dynamic, show | dynamic |
+| Hard drop | off, on | on |
+| Next-piece preview | off, on | on |
+| Hard-drop locking | follow general, immediate | follow general |
+| General locking | failed downward attempt, full interval | full interval |
+| Hold | off, on | on |
+
+The next preview shows exactly the shape that the next queue-consuming spawn will use. Prepare queue state during session/randomizer transactions, never while rendering or toggling preview. Empty hold consumes the previewed shape; a populated hold swap does not advance it. Hide the preview without changing the sequence when off. Settings controls and restart remain keyboard accessible without their arrow/Space/C/P/R events being interpreted as gameplay.
+
+**R19 — Immediate effects and session lifetime.** Visibility, hard-drop availability, next preview and hold availability apply at the next rendered/action snapshot without restarting or advancing the game. A disabled drop/hold action is a no-op; recognized gameplay keys still prevent scrolling while the game owns focus. Disabling hold preserves the stored shape and the once-per-piece eligibility flag. Re-enabling cannot grant another hold on the same piece. Penetrator hold remains prohibited even when the hold setting is on. Settings changes do not consume random draws, alter bonuses or reset timers. Settings survive R/restart in the current page; reload initializes defaults. Do not read/write cookies, URL setting parameters or other persistent storage for these controls.
+
+**R20 — Lock-policy capture and combinations.** Every spawned piece, including an incoming hold/restart piece, captures both selected locking policies. Later setting changes update the panel but preserve that piece's captured policies and any pending deadline. Interval policy follows R12. Failed-attempt policy creates no grounded deadline: lock on a failed downward attempt by gravity or soft drop, while grounded movement/rotation remains legal until that attempt.
+
+When hard drop is enabled, first commit the normal or penetrator canonical landing. Captured immediate hard-drop locking locks once at that timestamp, including a zero-distance drop. Captured follow-general with interval policy uses R12's full interval after positive-distance grounding and preserves an existing deadline on a zero-distance drop. Captured follow-general with failed-attempt policy treats the blocking end of the drop as the failed downward attempt and locks once immediately. Hard-drop availability is live; it does not change a captured policy or an already pending deadline.
+
+| Contract | Objective acceptance |
+| --- | --- |
+| R18 | All six controls start at documented defaults and are independently operable through native focus. Preview is identical to the next queue-consuming spawn and is unaffected by render/toggle calls. |
+| R19 | Toggle ghost modes while crossing the midline; disable/re-enable hold before/after use; disable drop while grounded; verify no board, timer, bonus or sequence mutation beyond the selected effect. Restart retains choices; reload restores defaults. |
+| R20 | Test both general policies × both hard-drop policies, including positive/zero-distance drops and penetrators. Change policies at 500 ms of a 1000 ms grounded deadline: the existing deadline is unchanged and the next spawned/held piece captures the new selections. |
