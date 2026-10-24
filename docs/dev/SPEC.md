@@ -52,7 +52,7 @@ Clockwise rotation transforms offsets around (1,1) for J/L/S/T/Z and (1.5,1.5) f
 
 **R10 — Wall kicks.** For a requested clockwise rotation, test the rotated pose with ordered origin offsets (0,0), (-1,0), (1,0), (-2,0), (2,0), (0,-1). Accept the first strict fit. If none fits, preserve the pose. O does not rotate or kick. This is a deterministic custom kick policy; no SRS compatibility is claimed.
 
-**R11 — Landing, ghost and hard drop.** For a normal piece, the landing is the last strict-fitting pose reached by repeated one-row descent before the first blocked step. The ghost displays precisely that pose using a distinguishable outline without changing board state, time or random draws. Hard drop commits the same pose. A positive-distance hard drop establishes ground contact at its action timestamp. A zero-distance hard drop preserves an existing deadline. Ghost and hard drop do not project through obstructions for normal pieces.
+**R11 — Landing, ghost and hard drop.** For a normal piece, the landing is the last strict-fitting pose reached by repeated one-row descent before the first blocked step. When visible, the ghost displays precisely that pose using a distinguishable outline without changing board state, time or random draws. Hard drop commits the same pose. A positive-distance hard drop establishes ground contact at its action timestamp. A zero-distance hard drop preserves an existing deadline. Ghost and hard drop do not project through obstructions for normal pieces.
 
 **R12 — Full interval locking.** A piece becomes grounded when a further downward step is unavailable. Start a 1000 ms deadline at that transition, including grounding caused by lateral movement, rotation or hard drop. Grounded movement/rotation preserves the existing deadline if still grounded. Becoming airborne cancels it; the next grounding starts a fresh interval. Failed downward attempts cannot shorten a deadline. On expiry, lock once if still grounded. At exact expiry, the due lock precedes input; input then targets the resulting current piece. Hold starts fresh timing on its incoming piece. Spawning grounded starts a deadline immediately; a spawn collision remains game over. Hidden time does not consume deadlines. No reset occurs from repeated zero-distance drop.
 
@@ -63,3 +63,9 @@ Clockwise rotation transforms offsets around (1,1) for J/L/S/T/Z and (1.5,1.5) f
 | R10 | Fixtures reach the first fitting kick candidate, reject exhausted candidates and leave O unchanged. |
 | R11 | Ghost equals hard-drop geometry across walls and cavities; neither projection nor rendering consumes randomness. |
 | R12 | Ground at t=0: no lock at 999 ms, one lock at 1000 ms; grounded shifts preserve the deadline; airborne departure/recontact restarts it; hard drop and hidden-tab rebasing obey the same rule. |
+
+## Conditional ghost visibility
+
+**R13 — Midline visibility.** In dynamic mode, show the ghost if and only if every projected occupied cell has y ≥ 10. Any cell at y ≤ 9 hides it, including a projection straddling rows 9 and 10. Recompute after movement, rotation, descent, hold, spawn and board changes. Visibility does not alter the landing query or hard drop. A lower-half landing becomes visible immediately; game over has no active ghost.
+
+Acceptance: project fixtures entirely above, straddling and entirely below the midline; assert hidden, hidden and visible respectively, then move between those cases and verify geometry remains identical to hard drop.
